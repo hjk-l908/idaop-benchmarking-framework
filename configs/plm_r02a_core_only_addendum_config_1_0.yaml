@@ -1,0 +1,49 @@
+# PLM R02A core-only addendum config 1.0
+# Purpose: fill missing R02A hard-split core_only PLM comparison using frozen ESM-2 embeddings.
+# Boundary: no fine-tuning, no new model family, no branch redefinition, no challenge-only train/CV.
+project_root: .
+addendum_id: PLM_R02A_CORE_ONLY_ADDENDUM_1_0
+
+inputs:
+  embedding_npz: data/embeddings/plm_full_esm2_embeddings_1_0.npz
+  embedding_index_csv: data/embeddings/plm_full_esm2_embedding_index_1_0.csv
+  split_manifest_csv: splits/plm_combined_split_matching_manifest_1_0.csv
+
+addendum_source:
+  source_split_family: r02a_sequence_cluster_hard_split
+  source_analysis_branch: sensplus
+  output_analysis_branch: core_only
+  rule: exclude negative_sensitivity rows from the validated R02A sensplus split; preserve train/test membership for all remaining positive_core and core_negative rows.
+
+features:
+  feature_name: ESM2_frozen_embedding
+  embedding_model: esm2_t33_650M_UR50D
+  repr_layer: 33
+  pooling: mean_non_special_tokens
+  expected_embedding_dim: 1280
+
+models:
+  - model_id: ESM2_LR_L2
+    model_family: LogisticRegression
+    penalty: l2
+    solver: liblinear
+    class_weight: balanced
+    max_iter: 1000
+    random_state: 42
+    decision_threshold: 0.5
+  - model_id: ESM2_LinearSVM
+    model_family: LinearSVM
+    class_weight: balanced
+    C: 1.0
+    max_iter: 5000
+    random_state: 42
+    decision_threshold: 0.0
+
+outputs:
+  output_root: outputs/plm_r02a_core_only_addendum_1_0
+  addendum_split_manifest_csv: plm_r02a_core_only_addendum_split_manifest_1_0.csv
+  per_fold_metrics_csv: plm_r02a_core_only_addendum_per_fold_metrics_1_0.csv
+  predictions_csv: plm_r02a_core_only_addendum_predictions_1_0.csv
+  aggregate_summary_csv: plm_r02a_core_only_addendum_aggregate_summary_1_0.csv
+  qc_json: plm_r02a_core_only_addendum_execution_qc_1_0.json
+  run_manifest_json: plm_r02a_core_only_addendum_run_manifest_1_0.json

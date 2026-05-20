@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "n_csv_rows": 959,
+  "n_fasta_records": 959,
+  "expected_n_sequences": 959,
+  "n_errors": 0,
+  "n_warnings": 0,
+  "errors": [],
+  "warnings": [],
+  "message": "Preflight only; no embedding or classifier metrics computed."
+}

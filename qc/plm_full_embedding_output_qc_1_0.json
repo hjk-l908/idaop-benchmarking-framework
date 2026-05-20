@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "npz_path": "data/embeddings/plm_full_esm2_embeddings_1_0.npz",
+  "index_path": "data/embeddings/plm_full_esm2_embedding_index_1_0.csv",
+  "array_key": "embeddings",
+  "embedding_shape": [
+    959,
+    1280
+  ],
+  "index_rows": 959,
+  "expected_rows_959": true,
+  "expected_rows_match_index": true,
+  "expected_dim_1280": true,
+  "nan_count": 0,
+  "inf_count": 0,
+  "all_finite": true,
+  "sequence_id_unique": true,
+  "branches": {
+    "positive_core": 899,
+    "core_negative": 29,
+    "challenge_only": 28,
+    "negative_sensitivity": 3
+  },
+  "labels": {
+    "1": 899,
+    "0": 60
+  },
+  "model_names": [
+    "esm2_t33_650M_UR50D"
+  ],
+  "repr_layers": [
+    33
+  ],
+  "pooling_values": [
+    "mean_non_special_tokens"
+  ]
+}

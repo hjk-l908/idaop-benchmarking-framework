@@ -1,0 +1,9 @@
+LICENSE NOT YET GRANTED
+
+This is a Phase 2 internal pre-submission release candidate. Do not redistribute or publish this repository until institutional/license compatibility has been confirmed.
+
+Recommended split for final public release:
+- Code: MIT or BSD-3-Clause if approved by the institution.
+- Data/tables: CC BY 4.0 or another license compatible with the source databases and journal policy.
+
+Replace this file with the selected final license before public release.

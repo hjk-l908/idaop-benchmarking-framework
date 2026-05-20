@@ -1,0 +1,17 @@
+name: antioxidant-peptide-benchmark
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10.14
+  - numpy=2.2.6
+  - pandas=2.3.3
+  - scikit-learn=1.7.2
+  - scipy=1.15.3
+  - pyyaml
+  - pip
+  - pip:
+      - torch==2.5.1+cu121
+      - fair-esm==2.0.0

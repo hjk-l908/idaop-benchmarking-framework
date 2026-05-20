@@ -1,0 +1,5 @@
+branch,label,training_eligible,cv_eligible,stress_test_only,n_sequences
+challenge_only,0,no,no,yes,28
+core_negative,0,yes,yes,no,29
+negative_sensitivity,0,sensitivity_branch_only,paired_sensitivity_analysis_only,no,3
+positive_core,1,yes,yes,no,899

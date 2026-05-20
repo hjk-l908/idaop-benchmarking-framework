@@ -1,0 +1,79 @@
+# PLM classifier full execution config 1.0
+# Frozen ESM-2 embedding matched-comparison only.
+# No fine-tuning. No model shopping. No branch redefinition.
+
+project_root: .
+
+inputs:
+  embedding_npz: data/embeddings/plm_full_esm2_embeddings_1_0.npz
+  embedding_index_csv: data/embeddings/plm_full_esm2_embedding_index_1_0.csv
+  split_manifest_csv: splits/plm_combined_split_matching_manifest_1_0.csv
+
+run_scope:
+  split_families:
+    - random_cv_R1_R10
+    - r02a_sequence_cluster_hard_split
+  analysis_branches:
+    - core_only
+    - sensplus
+  allowed_split_roles:
+    - train
+    - test
+  prohibited_train_test_branch:
+    - challenge_only
+
+features:
+  feature_name: ESM2_frozen_embedding
+  embedding_model: esm2_t33_650M_UR50D
+  repr_layer: 33
+  pooling: mean_non_special_tokens
+  expected_embedding_dim: 1280
+
+models:
+  - model_id: ESM2_LR_L2
+    model_family: LogisticRegression
+    penalty: l2
+    solver: liblinear
+    class_weight: balanced
+    max_iter: 1000
+    random_state: 42
+    decision_threshold: 0.5
+  - model_id: ESM2_LinearSVM
+    model_family: LinearSVM
+    class_weight: balanced
+    C: 1.0
+    max_iter: 5000
+    random_state: 42
+    decision_threshold: 0.0
+
+preprocessing:
+  scaler: StandardScaler
+  fit_scaler_on_train_only: true
+
+metrics:
+  threshold_metrics:
+    - mcc
+    - f1
+    - precision
+    - sensitivity
+    - specificity
+    - confusion_matrix
+  ranking_metrics:
+    - auroc
+    - auprc
+
+outputs:
+  output_root: outputs/plm_classifier_full_execution_1_0
+  per_fold_metrics_csv: plm_classifier_full_per_fold_metrics_1_0.csv
+  predictions_csv: plm_classifier_full_predictions_1_0.csv
+  aggregate_summary_csv: plm_classifier_full_aggregate_summary_1_0.csv
+  sensitivity_behavior_csv: plm_classifier_full_sensitivity_behavior_1_0.csv
+  qc_json: plm_classifier_full_execution_qc_1_0.json
+  run_manifest_json: plm_classifier_full_run_manifest_1_0.json
+
+claim_boundaries:
+  dry_run_metrics_are_not_manuscript_evidence: true
+  full_metrics_require_qc_pass_before_interpretation: true
+  challenge_only_not_training_or_cv: true
+  sensitivity_not_core_headline: true
+  no_fine_tuning: true

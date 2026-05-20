@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "metrics_rows": 168,
+  "prediction_rows": 7374,
+  "aggregate_rows": 6,
+  "sensitivity_rows": 12,
+  "model_counts": {
+    "ESM2_LR_L2": 84,
+    "ESM2_LinearSVM": 84
+  },
+  "split_family_counts": {
+    "random_cv_R1_R10": 160,
+    "r02a_sequence_cluster_hard_split": 8
+  },
+  "analysis_branch_counts": {
+    "sensplus": 88,
+    "core_only": 80
+  },
+  "errors": [],
+  "warnings": [],
+  "classifier_training_performed": true,
+  "metrics_computed": true,
+  "claim_boundary": "Interpret only after reviewing full output QC and matched AAC comparison."
+}

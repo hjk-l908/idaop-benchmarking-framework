@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "addendum_id": "PLM_R02A_CORE_ONLY_ADDENDUM_1_0",
+  "config": "configs/plm_r02a_core_only_addendum_config_1_0.yaml",
+  "embedding_npz": "data/embeddings/plm_full_esm2_embeddings_1_0.npz",
+  "embedding_index": "data/embeddings/plm_full_esm2_embedding_index_1_0.csv",
+  "source_split_manifest": "splits/plm_combined_split_matching_manifest_1_0.csv",
+  "addendum_split_manifest": "results/plm_r02a_core_only_addendum_split_manifest_1_0.csv",
+  "array_key": "embeddings",
+  "embedding_shape": [
+    959,
+    1280
+  ],
+  "source_r02a_sensplus_rows": 708,
+  "removed_sensitivity_rows": 12,
+  "addendum_manifest_rows": 696,
+  "split_units": 4,
+  "branch_counts": {
+    "positive_core": 580,
+    "core_negative": 116
+  },
+  "role_counts": {
+    "train": 522,
+    "test": 174
+  },
+  "label_counts": {
+    "1": 580,
+    "0": 116
+  },
+  "models": [
+    {
+      "model_id": "ESM2_LR_L2",
+      "model_family": "LogisticRegression",
+      "penalty": "l2",
+      "solver": "liblinear",
+      "class_weight": "balanced",
+      "max_iter": 1000,
+      "random_state": 42,
+      "decision_threshold": 0.5
+    },
+    {
+      "model_id": "ESM2_LinearSVM",
+      "model_family": "LinearSVM",
+      "class_weight": "balanced",
+      "C": 1.0,
+      "max_iter": 5000,
+      "random_state": 42,
+      "decision_threshold": 0.0
+    }
+  ],
+  "errors": [],
+  "bad_units": [],
+  "preflight_only": false,
+  "classifier_training_performed": true,
+  "metrics_computed": true,
+  "claim_boundary": "R02A core-only addendum fills missing PLM hard-split core-only comparison; interpret only after QC and integration with Table 6.",
+  "per_fold_metrics_csv": "results/plm_r02a_core_only_addendum_per_fold_metrics_1_0.csv",
+  "predictions_csv": "results/plm_r02a_core_only_addendum_predictions_1_0.csv",
+  "aggregate_summary_csv": "results/plm_r02a_core_only_addendum_aggregate_summary_1_0.csv",
+  "n_metric_rows": 8,
+  "n_prediction_rows": 348,
+  "n_aggregate_rows": 2
+}

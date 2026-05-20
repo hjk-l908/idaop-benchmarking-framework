@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "source_assignment_csv": "/mnt/data/_inspect_r02a/pilot_r02a_reviewed/inputs/PILOT_R02A_sequence_cluster_hard_split_assignments.csv",
+  "feature": "AAC_reference",
+  "analysis_branch": "core_only",
+  "removed_sensitivity_rows": 3,
+  "input_rows_core_only": 174,
+  "fold_units": 4,
+  "metric_rows": 8,
+  "prediction_rows": 348,
+  "models": [
+    "LR_L2",
+    "LinearSVM"
+  ],
+  "branch_counts": {
+    "positive_core": 145,
+    "negative_core": 29
+  },
+  "label_counts": {
+    "1": 145,
+    "0": 29
+  },
+  "train_test_test_neg_by_fold": [
+    {
+      "model": "LR_L2",
+      "fold_id": 1,
+      "test_pos": 37,
+      "test_neg": 7,
+      "train_pos": 108,
+      "train_neg": 22
+    },
+    {
+      "model": "LR_L2",
+      "fold_id": 2,
+      "test_pos": 36,
+      "test_neg": 7,
+      "train_pos": 109,
+      "train_neg": 22
+    },
+    {
+      "model": "LR_L2",
+      "fold_id": 3,
+      "test_pos": 36,
+      "test_neg": 8,
+      "train_pos": 109,
+      "train_neg": 21
+    },
+    {
+      "model": "LR_L2",
+      "fold_id": 4,
+      "test_pos": 36,
+      "test_neg": 7,
+      "train_pos": 109,
+      "train_neg": 22
+    },
+    {
+      "model": "LinearSVM",
+      "fold_id": 1,
+      "test_pos": 37,
+      "test_neg": 7,
+      "train_pos": 108,
+      "train_neg": 22
+    },
+    {
+      "model": "LinearSVM",
+      "fold_id": 2,
+      "test_pos": 36,
+      "test_neg": 7,
+      "train_pos": 109,
+      "train_neg": 22
+    },
+    {
+      "model": "LinearSVM",
+      "fold_id": 3,
+      "test_pos": 36,
+      "test_neg": 8,
+      "train_pos": 109,
+      "train_neg": 21
+    },
+    {
+      "model": "LinearSVM",
+      "fold_id": 4,
+      "test_pos": 36,
+      "test_neg": 7,
+      "train_pos": 109,
+      "train_neg": 22
+    }
+  ],
+  "no_scaler_used": true,
+  "lr_solver": "liblinear",
+  "svm_threshold": 0.0,
+  "lr_threshold": 0.5,
+  "claim_boundary": "Completes matched AAC hard-split core-only reference for Table 6; descriptive n=4 comparison only."
+}

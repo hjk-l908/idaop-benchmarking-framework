@@ -1,0 +1,17 @@
+column,description,allowed_values,required
+sequence_id,Stable sequence identifier used across manifests and split files,,yes
+source_record_id,Original or internal source record identifier used before public release harmonization,,yes
+sequence,Amino-acid sequence using one-letter code,ACDEFGHIKLMNPQRSTVWY,yes
+sequence_length,Length of the peptide sequence in amino-acid residues,integer,yes
+label,Binary label used for formal training/CV branches,0 or 1,yes for core branches
+branch,Dataset branch assignment,positive_core; core_negative; negative_sensitivity; challenge_only,yes
+branch_role,Role of the branch in the benchmark design,formal_positive; headline_negative; sensitivity_only; challenge_only,yes
+training_eligible,Whether the sequence may be used for model training,yes; no; sensitivity_branch_only,yes
+cv_eligible,Whether the sequence may be used in cross-validation or formal split evaluation,yes; no; paired_sensitivity_analysis_only,yes
+stress_test_only,Whether the sequence is reserved only for post hoc stress testing,yes; no,yes
+allowed_use,Permitted analysis use for this sequence or branch,,yes
+prohibited_use,Uses that must not be performed for this sequence or branch,,yes
+sequence_md5,MD5 hash of the peptide sequence used for traceability without changing the public sequence,,yes
+status,QC or inclusion status for the row,PASS; CHECK; FAIL,yes
+source_reference,Source or provenance reference for the sequence,recommended if available,recommended
+notes,Free-text notes for provenance or branch-specific caveats,,optional

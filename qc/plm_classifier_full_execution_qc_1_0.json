@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "config": "configs/plm_classifier_full_execution_config_1_0.yaml",
+  "embedding_npz": "data/embeddings/plm_full_esm2_embeddings_1_0.npz",
+  "embedding_index": "data/embeddings/plm_full_esm2_embedding_index_1_0.csv",
+  "split_manifest": "splits/plm_combined_split_matching_manifest_1_0.csv",
+  "array_key": "embeddings",
+  "embedding_shape": [
+    959,
+    1280
+  ],
+  "split_rows_after_scope_filter": 14748,
+  "split_units": 84,
+  "models": [
+    {
+      "model_id": "ESM2_LR_L2",
+      "model_family": "LogisticRegression",
+      "penalty": "l2",
+      "solver": "liblinear",
+      "class_weight": "balanced",
+      "max_iter": 1000,
+      "random_state": 42,
+      "decision_threshold": 0.5
+    },
+    {
+      "model_id": "ESM2_LinearSVM",
+      "model_family": "LinearSVM",
+      "class_weight": "balanced",
+      "C": 1.0,
+      "max_iter": 5000,
+      "random_state": 42,
+      "decision_threshold": 0.0
+    }
+  ],
+  "errors": [],
+  "bad_units": [],
+  "preflight_only": false,
+  "classifier_training_performed": true,
+  "metrics_computed": true,
+  "claim_boundary": "Full metrics require QC pass before interpretation; no challenge-only training/CV.",
+  "per_fold_metrics_csv": "results/plm_classifier_full_per_fold_metrics_1_0.csv",
+  "predictions_csv": "results/plm_classifier_full_predictions_1_0.csv",
+  "aggregate_summary_csv": "results/plm_classifier_full_aggregate_summary_1_0.csv",
+  "sensitivity_behavior_csv": "results/plm_classifier_full_sensitivity_behavior_1_0.csv",
+  "n_metric_rows": 168,
+  "n_prediction_rows": 7374,
+  "n_aggregate_rows": 6,
+  "n_sensitivity_summary_rows": 12
+}

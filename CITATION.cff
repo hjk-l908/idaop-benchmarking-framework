@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "This repository is a private pre-submission staging repository. Please do not cite or reuse as a public release until the final archived release, DOI, license, and citation metadata are confirmed."
+title: "iDAOP: Antioxidant Peptide Benchmarking Framework"
+version: "phase2-filled-1.0"
+authors:
+  - name: "iDAOP Benchmarking Framework contributors"
+repository-code: "https://github.com/hjk-l908/idaop-benchmarking-framework"
+abstract: "Manuscript-facing benchmark and evaluation framework for antioxidant peptide prediction studies, including branch-aware dataset manifests, transparent AAC baseline evaluation, retained-assignment R02A descriptive stress testing, and a controlled frozen ESM-2 comparison."
+keywords:
+  - antioxidant peptides
+  - benchmark dataset
+  - peptide prediction
+  - AAC baseline
+  - ESM-2
+  - reproducibility

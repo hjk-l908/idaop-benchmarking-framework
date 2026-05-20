@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "embedding_index_path": "data/embeddings/plm_full_esm2_embedding_index_1_0.csv",
+  "split_manifest_path": "splits/plm_combined_split_matching_manifest_1_0.csv",
+  "embedding_index_rows": 959,
+  "split_manifest_rows": 14748,
+  "unique_embedding_ids": 959,
+  "unique_split_record_ids": 785,
+  "missing_required_columns": [],
+  "missing_embedding_id_count": 0,
+  "missing_embedding_id_examples": [],
+  "challenge_only_rows_in_train_test_manifest": 0,
+  "bad_split_roles": [],
+  "duplicate_manifest_rows": 0,
+  "units_missing_train_or_test": 0,
+  "train_test_overlap_unit_count": 0,
+  "train_test_overlap_examples": [],
+  "role_counts": {
+    "train": 11061,
+    "test": 3687
+  },
+  "split_family_counts": {
+    "random_cv_R1_R10": 14040,
+    "r02a_sequence_cluster_hard_split": 708
+  },
+  "analysis_branch_counts": {
+    "sensplus": 7788,
+    "core_only": 6960
+  },
+  "branch_counts": {
+    "positive": 10440,
+    "core_negative": 2088,
+    "positive_core": 1740,
+    "negative_core": 348,
+    "sensitivity_negative": 108,
+    "negative_sensitivity": 24
+  },
+  "label_counts": {
+    "1": 12180,
+    "0": 2568
+  },
+  "run_matrix_rows": 7,
+  "branch_selector_rows": 4
+}

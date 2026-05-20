@@ -1,0 +1,40 @@
+# PLM full ESM-2 embedding config 1.0
+# Embedding only. No classifier training or PLM metrics.
+
+dataset:
+  input_csv: data/full_embedding_input_for_esm2_1_0.csv
+  input_fasta: inputs/full_embedding/plm_full_embedding_input_for_esm2_1_0.fasta
+  sequence_order_manifest: data/full_embedding_sequence_order_manifest_1_0.csv
+  sequence_id_column: sequence_id
+  sequence_column: sequence
+  label_column: label
+  branch_column: branch
+  expected_n_sequences: 959
+
+model:
+  family: ESM-2
+  checkpoint_candidate: esm2_t33_650M_UR50D
+  checkpoint_status: locked_after_dry_run_pass
+  fine_tuning_allowed: false
+  repr_layer: 33
+  pooling: mean_non_special_tokens
+  dtype: float32
+  device: auto
+  batch_size: 8
+
+qc:
+  allowed_characters: ACDEFGHIKLMNPQRSTVWY
+  preserve_input_order: true
+  fail_on_duplicate_sequence_id: true
+  fail_on_duplicate_sequence: false
+  fail_on_missing_embedding: true
+  fail_on_embedding_row_mismatch: true
+  do_not_report_metrics_from_embedding_run: true
+
+outputs:
+  output_dir: outputs/embeddings
+  qc_output_dir: outputs/qc
+  embedding_npz: plm_full_esm2_embeddings_1_0.npz
+  embedding_index_csv: plm_full_esm2_embedding_index_1_0.csv
+  preflight_report_json: plm_full_embedding_preflight_report_1_0.json
+  sequence_order_qc_csv: plm_full_embedding_sequence_order_qc_1_0.csv

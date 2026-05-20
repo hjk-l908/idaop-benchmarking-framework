@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "metric_rows": 8,
+  "prediction_rows": 348,
+  "aggregate_rows": 2,
+  "addendum_manifest_rows": 696,
+  "test_rows_in_manifest": 174,
+  "model_counts": {
+    "ESM2_LR_L2": 4,
+    "ESM2_LinearSVM": 4
+  },
+  "split_family_counts": {
+    "r02a_sequence_cluster_hard_split": 8
+  },
+  "analysis_branch_counts": {
+    "core_only": 8
+  },
+  "branch_counts_manifest": {
+    "positive_core": 580,
+    "core_negative": 116
+  },
+  "claim_boundary": "This addendum only fills missing R02A core-only PLM hard-split cells; integrate with AAC matched comparison before manuscript interpretation."
+}

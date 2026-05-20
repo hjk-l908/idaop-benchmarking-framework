@@ -1,0 +1,8 @@
+qc_item,status,evidence_file,note
+branch_manifest_counts,PASS,data/branch_summary.csv,positive_core=899; core_negative=29; negative_sensitivity=3; challenge_only=28
+full_embedding_input,PASS,qc/plm_full_embedding_output_qc_1_0.json,959 x 1280 frozen ESM-2 embeddings; no NaN/Inf
+split_matching_manifest,PASS,qc/plm_split_matching_manifest_server_validation_1_0.json,"no missing embeddings, no train/test overlap, no challenge-only train/test rows"
+plm_classifier_full_execution,PASS,qc/plm_classifier_full_execution_qc_1_0.json,"168 per-fold metric rows, 7374 predictions, 6 aggregate rows"
+r02a_core_only_addendum,PASS,qc/plm_r02a_core_only_addendum_output_qc_1_0.json,core_only addendum derived from sensplus by excluding negative_sensitivity rows
+table6_complete,PASS,results/table6_plm_vs_aac.csv,"8 rows including random-CV and R02A, core_only and sensplus branches"
+r02a_original_generation_command,LIMITATION,supplementary/R02A_retained_assignment_documentation_1_0.md,original cluster-generation command/script was not recovered; R02A is retained-assignment descriptive stress test
