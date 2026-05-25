@@ -1,8 +1,8 @@
 Supplementary file,Recommended title,Contents,Current status / action
 S1,Branch manifest and eligibility table,"positive_core, core_negative, negative_sensitivity, challenge_only counts and allowed/prohibited use",Ready from Tables 1 and branch manifest; verify final file names
 S2,R02A clustering and split-generation details,"clustering tool, version, identity threshold, command line, cluster-to-fold assignment, leakage checks",AUTHOR TO CONFIRM: exact clustering command/threshold
-S3,R01-R08 baseline evidence package,"reviewed baseline packages, decision lock, random-CV/hard-split summaries",Ready internally; prepare reviewer-facing simplified version
+S3,R01-R07 diagnostic baseline evidence package,"reviewed diagnostic baseline packages, decision lock, random-CV/hard-split summaries; R08 attempted but not interpreted",Ready as diagnostic traceability package in results/diagnostic; do not include R08 metrics
 S4,Per-fold AAC and PLM metrics,per-fold metrics for AAC_reference and frozen ESM-2 matched comparisons including R02A core_only addendum,Ready after v0.5; verify paired-stat table
-S5,QC and run manifests,"split matching validation, embedding QC, classifier output QC, SHA-256 manifests",Ready internally; remove private paths if needed
+S5,QC and run manifests,"split matching validation, embedding QC, classifier output QC, SHA-256 manifests",Ready for public-safety review; verify SHA-256 inventory after final merge
 S6,Sensitivity-negative behavior,"per-sequence behavior of VLDTDY, LKALPMH, IQKVAGTW under baseline and PLM settings",Ready; keep separate from headline branch
 S7,Code and environment inventory,"Python/package versions, seed list, command wrappers, feature generation and classifier scripts",AUTHOR TO CONFIRM: AAC environment and public repository DOI

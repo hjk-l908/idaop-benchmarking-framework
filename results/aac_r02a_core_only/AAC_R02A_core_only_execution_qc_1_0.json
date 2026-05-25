@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "source_assignment_csv": "/mnt/data/_inspect_r02a/pilot_r02a_reviewed/inputs/PILOT_R02A_sequence_cluster_hard_split_assignments.csv",
+  "source_assignment_csv": "splits/PILOT_R02A_sequence_cluster_hard_split_assignments.csv",
   "feature": "AAC_reference",
   "analysis_branch": "core_only",
   "removed_sensitivity_rows": 3,

@@ -1,0 +1,2 @@
+PUBLIC_SAFETY_SCAN_STATUS: PASS
+No concrete private absolute paths, sandbox paths, user-home paths, credential-like assignments, private-key markers, internal archive names, or TODO/FIXME markers were detected in release-intended text files. Generic words such as "server" in documentation were not treated as leaks unless they appeared in private-path or credential-like contexts.

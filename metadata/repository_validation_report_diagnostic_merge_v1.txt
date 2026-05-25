@@ -1,0 +1,19 @@
+Repository validation report -- diagnostic merge release candidate
+
+Status: PASS
+
+Validation performed after merging the curated public-safe diagnostic folder into results/diagnostic/.
+
+Checks performed:
+- Required manuscript-facing files are present.
+- Branch manifest counts match expected values: positive_core=899, core_negative=29, negative_sensitivity=3, challenge_only=28.
+- Challenge-only rows are absent from train/test manifests checked by scripts/validate_repository.py.
+- Table 6 remains present with 8 rows and includes R02A core_only rows for LR_L2 and LinearSVM.
+- results/diagnostic/ contains public-safe R01/R03/R04/R05/R06/R07 diagnostic traceability CSVs and README.md.
+- No R08 metric file is included in results/diagnostic/.
+
+scripts/validate_repository.py output:
+VALIDATION_STATUS: PASS
+
+Interpretation:
+This repository snapshot is suitable as a GitHub release-readiness candidate for reviewer-facing traceability, pending author/institutional decisions on final license, reviewer access, and archival DOI.

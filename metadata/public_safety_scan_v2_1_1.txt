@@ -1,0 +1,13 @@
+Public-safety scan v2.1.1
+Status: PASS
+
+Scope: release-intended text, data, code, config, and SVG files in the repository.
+Exclusions: the safety-command reference document and prior scan logs were excluded to avoid self-matching search terms; binary files were not text-scanned.
+
+No private absolute paths, local user-home paths, concrete internal archive filenames, credential-like assignments, private-key markers, IP addresses, or TODO/FIXME markers were detected in the scanned release-intended files.
+
+Protected scientific boundaries unchanged by this cosmetic patch:
+- R02A remains a retained-assignment descriptive hard-split stress test.
+- R08 remains attempted but non-interpreted.
+- R03/R04/R05/R06/R07 remain diagnostic/pilot-level provenance only.
+- Frozen ESM-2 remains a controlled comparator, not a superior-predictor claim.
