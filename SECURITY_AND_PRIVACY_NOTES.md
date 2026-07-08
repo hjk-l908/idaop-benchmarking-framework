@@ -1,20 +1,23 @@
 # Security and privacy notes
 
-This Phase 2 repository was prepared as a public-facing draft. Known server-private details were removed from command wrappers/configs where possible. Before public release, perform a final scrub for:
+This repository was prepared as a public-facing manuscript and reproducibility snapshot. Known server-specific details were removed from command wrappers/configs where possible. Before and after public release, maintainers should continue to avoid adding:
 
 - absolute local paths
 - usernames and hostnames
 - IP addresses or private server names
 - API tokens or passwords
-- private AI cowork review text that is not intended for release
+- private review drafts or AI-cowork text that is not intended for release
 - non-public manuscript administrative notes
+- source PDFs, validation PDFs, restricted source archives, or other non-redistributable raw materials
 
 The retained R02A source assignment and downstream manifests are included because they are needed to trace the reported hard-split stress-test analyses.
-## Release-history policy
 
-This private repository is treated as a staging repository. Before public release, the public-facing version should be created from a clean snapshot or squashed release history after final safety review. This avoids exposing earlier private-path cleanup commits through public Git history.
 ## Current-tree scrub status
 
-As of the current private staging snapshot, GitHub Code searches for known prior private execution-path markers returned no current files outside this scrub documentation.
+The current release-intended file tree has been reviewed for known private-path, credential-like, restricted-source, and draft-marker concerns. No intentionally distributed source PDFs, validation PDFs, FASTA/FA raw source files, CIF files, credentials, API tokens, or concrete private execution paths were identified in the public-facing file tree.
 
-This confirms that the current repository file tree no longer exposes known private execution-path strings. This does not replace the separate pre-public-release requirement to publish from a clean snapshot or squashed release history.
+This note does not replace future safety review if new files are added. Any future release should repeat the public-safety scan before tagging and archiving.
+
+## Release-history note
+
+This public-release metadata patch updates the current `main` tree. If maintainers later discover that earlier Git history contains sensitive artifacts, the public archive should instead be generated from a clean snapshot or a history-cleaned repository before wider dissemination.

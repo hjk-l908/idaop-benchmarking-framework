@@ -1,35 +1,30 @@
-Public-safety scan -- diagnostic merge release candidate
+Public-safety scan -- diagnostic merge and public-release license patch v1
 
 Status: PASS
 
-Scope: text-like release files excluding docs/repo_safety_search_commands.md, which intentionally contains search patterns.
+Scope: public-facing repository files, with search-command reference material understood to contain search terms by design.
 
-High-risk private path scan: PASS
-- No /home/... private user paths found outside the intentional safety-command document.
-- No /mnt/... paths found outside the intentional safety-command document.
-- No Windows C:\Users paths found outside the intentional safety-command document.
+High-risk path/material scan: PASS
+- No /home/... private user paths found in release content.
+- No /mnt/... sandbox paths found in release content.
+- No Windows C:\Users paths found in release content.
 - No /sessions/... paths found.
 - No IP addresses found.
-- No file named or referenced as 過程.zip found in release content.
+- No source PDF files or validation PDF files are included.
+- No FASTA/FA raw source files are included.
+- No CIF files are included.
+- No file named or referenced as a restricted internal process archive is included for release.
 
 Diagnostic folder check: PASS
 - results/diagnostic/ is present.
+- Public-safe R01/R03/R04/R05/R06/R07 diagnostic traceability CSVs are present.
 - No R08 metric file is present.
-- results/diagnostic/README.md explicitly states that R08 was attempted but not interpreted and must not be cited as evidence.
+- results/diagnostic/README.md states that R08 was attempted but not interpreted and must not be cited as evidence.
 
-Benign keyword matches:
-The following matches are documentation/safety-scan terms, not leaked credentials or private paths:
-- PUBLIC_RELEASE_CHECKLIST.md:11 [credential_terms] ore public release, repeat a final public-safety review for passwords, API tokens, server IP addresses, internal hostnames, private paths, private r
-- SECURITY_AND_PRIVACY_NOTES.md:8 [credential_terms] ames - IP addresses or private server names - API tokens or passwords - private AI cowork review text that is not intended for release - non-public 
-- docs/diagnostic_traceability_validation_report.md:22 [internal_archive_terms] ry safety scan before public release. The original internal server-process archive should not be published. R08 should remain attempted/not interpreted be
-- metadata/public_safety_scan_v2_1.txt:2 [credential_terms] andbox paths, user-home paths, credential-like assignments, private-key markers, internal archive names, or TODO/FIXME markers were detected in release
-- metadata/public_safety_scan_v2_1.txt:2 [draft_markers] ssignments, private-key markers, internal archive names, or TODO/FIXME markers were detected in release-intended text files. Generic words such 
-- metadata/public_safety_scan_v2_1.txt:2 [draft_markers] ments, private-key markers, internal archive names, or TODO/FIXME markers were detected in release-intended text files. Generic words such as "se
-- metadata/public_safety_scan_v2_1_1.txt:7 [credential_terms] te internal archive filenames, credential-like assignments, private-key markers, IP addresses, or TODO/FIXME markers were detected in the scanned relea
-- metadata/public_safety_scan_v2_1_1.txt:7 [draft_markers] ial-like assignments, private-key markers, IP addresses, or TODO/FIXME markers were detected in the scanned release-intended files.  Protected s
-- metadata/public_safety_scan_v2_1_1.txt:7 [draft_markers] ike assignments, private-key markers, IP addresses, or TODO/FIXME markers were detected in the scanned release-intended files.  Protected scienti
-- metadata/repository_validation_report.txt:14 [credential_terms] rch_commands.md: no concrete private-path, credential-like, private-key, internal-archive, or draft-marker strings detected in release-intended text fi
-- results/diagnostic/README.md:55 [internal_archive_terms] y.  ## Do not include  Do not publish the original internal server-process archive or local run logs. Do not add raw files that contain server paths, user
+License/public-release metadata check: PASS
+- LICENSE contains the selected MIT License for code/scripts.
+- DATA_LICENSE.md documents CC BY 4.0 for public-safe author-prepared benchmark materials and excludes third-party/restricted source materials not redistributed here.
+- CITATION.cff lists manuscript author names, including Yu-Jie Weng, and does not include ORCID identifiers or a DOI placeholder.
 
 Concerning matches:
-- None.
+- None identified in the current release-intended file tree.

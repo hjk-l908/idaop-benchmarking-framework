@@ -1,7 +1,8 @@
 # iDAOP: Antioxidant Peptide Benchmarking Framework
 
 This project page accompanies a manuscript-facing benchmark and evaluation framework for antioxidant peptide prediction studies.
-> Release status: This project page currently describes a private pre-submission staging repository. It is not a final public release. Public citation, reuse, DOI, and license information will be finalized only after archival release.
+
+> Release status: This repository is a submission-ready public repository snapshot for journal review and Zenodo archival DOI preparation. DOI and release-date metadata will be finalized after the GitHub release is archived.
 
 **iDAOP is not a new standalone predictor or web server.** It supports branch-aware dataset governance, transparent AAC baseline evaluation, retained-assignment R02A descriptive stress testing, and a controlled frozen ESM-2 comparison.
 
@@ -13,6 +14,7 @@ This project page accompanies a manuscript-facing benchmark and evaluation frame
 - Paired random-CV statistics
 - QC manifests for embedding, split matching, classifier execution, and R02A core-only addendum
 - Environment and script inventory
+- Public-safe diagnostic traceability files for R01/R03/R04/R05/R06/R07 in `results/diagnostic/`
 
 ## Main result boundary
 
@@ -28,7 +30,12 @@ Start with:
 4. `results/paired_stats.csv`
 5. `supplementary/R02A_retained_assignment_documentation_1_0.md`
 6. `qc/qc_manifest.csv`
+7. `results/diagnostic/README.md`
 
 ## Citation
 
-`CITATION.cff` lists the manuscript author names without ORCID identifiers. DOI, release date/tag, and final archival citation metadata remain to be finalized after author and institutional confirmation.
+`CITATION.cff` lists the manuscript author names without ORCID identifiers. The Zenodo DOI, release date/tag, and final archival citation metadata should be added after the GitHub release is archived.
+
+## License
+
+Code and command wrappers are released under the MIT License. Public-safe author-prepared benchmark materials and documentation are released under CC BY 4.0, with third-party and restricted-material boundaries described in `DATA_LICENSE.md`.

@@ -1,17 +1,18 @@
 VALIDATION_STATUS: PASS
 
-Merged v2.1 repository QA summary
-- Core repository validation script: PASS after v2.1 administrative/synchronization patch.
-- Diagnostic CSV files in results/diagnostic/: 19
-- Diagnostic README present: yes
-- R08 files in results/diagnostic/: 0
-- Diagnostic interpretation status: diagnostic/pilot-level provenance only; not primary benchmark evidence
-- Branch terminology clarification added: legacy `negative_core` in retained R02A/split files is documented as equivalent to canonical `core_negative`; no branch reassignment or relabeling is implied.
-- R02A/P02A clarification added: legacy `P02A`/`p02a` prefixes refer to the manuscript-facing retained-assignment `R02A` hard-split stress test.
-- S2 R02A documentation filename drift corrected to current files in `splits/`.
-- Standalone Figure 1 assets added in `figures/` with no DOI, manuscript version number, or predictor-superiority claim.
-- Manifest/checksum status: metadata/package_file_manifest.csv and metadata/SHA256SUMS.txt regenerated after the v2.1 patch and include the GitHub workflow file.
-- Public-safety scan excluding docs/repo_safety_search_commands.md: no concrete private-path, credential-like, private-key, internal-archive, or draft-marker strings detected in release-intended text files.
+Repository QA summary after public-release license patch v1
+- Core repository validation script: PASS.
+- Diagnostic CSV files in results/diagnostic/: 19.
+- Diagnostic README present: yes.
+- R08 files in results/diagnostic/: 0.
+- Diagnostic interpretation status: diagnostic/pilot-level provenance only; not primary benchmark evidence.
+- Branch terminology clarification retained: legacy `negative_core` in retained R02A/split files is documented as equivalent to canonical `core_negative`; no branch reassignment or relabeling is implied.
+- R02A/P02A clarification retained: legacy `P02A`/`p02a` prefixes refer to the manuscript-facing retained-assignment `R02A` hard-split stress test.
+- Standalone Figure 1 assets remain available in `figures/` with no predictor-superiority claim.
+- Author metadata: CITATION.cff lists Hui-Ju Kao, Yu-Jie Weng, Chia-Hung Chen, Chen-Lin Yu, Kai-Yao Huang, and Shun-Long Weng; ORCID identifiers are not listed.
+- License metadata: code/scripts use MIT License; public-safe author-prepared benchmark materials and documentation use CC BY 4.0 as described in DATA_LICENSE.md.
+- Manifest/checksum status: metadata/package_file_manifest.csv and metadata/SHA256SUMS.txt regenerated after the public-release license patch.
+- Public-safety status: no intentionally distributed source PDFs, validation PDFs, restricted source archives, FASTA/FA raw source files, CIF files, credentials, API tokens, or concrete private execution paths were identified in the current public-facing file tree.
 
-Release note
-- DOI, final public URL/reviewer access status, final license/data-license wording, and author/citation metadata still require author confirmation before public release.
+Remaining archival note
+- Zenodo DOI, final release date, and release tag should be added after the GitHub release is created and archived.

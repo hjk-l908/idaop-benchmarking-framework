@@ -1,12 +1,12 @@
-Public-safety scan v2.1.1
+Public-safety scan v2.1.1 / public-release license patch v1
 Status: PASS
 
 Scope: release-intended text, data, code, config, and SVG files in the repository.
-Exclusions: the safety-command reference document and prior scan logs were excluded to avoid self-matching search terms; binary files were not text-scanned.
+Exclusions: safety-command reference text and prior scan logs may contain search terms by design; these are not treated as leaks unless accompanied by concrete sensitive values.
 
-No private absolute paths, local user-home paths, concrete internal archive filenames, credential-like assignments, private-key markers, IP addresses, or TODO/FIXME markers were detected in the scanned release-intended files.
+No concrete absolute local paths, local user-home paths, concrete internal archive filenames, credential-like assignments, private-key markers, IP addresses, source PDFs, validation PDFs, FASTA/FA raw source files, CIF files, or TODO/FIXME markers were detected in scanned release-intended files.
 
-Protected scientific boundaries unchanged by this cosmetic patch:
+Protected scientific boundaries unchanged by this public-release metadata patch:
 - R02A remains a retained-assignment descriptive hard-split stress test.
 - R08 remains attempted but non-interpreted.
 - R03/R04/R05/R06/R07 remain diagnostic/pilot-level provenance only.

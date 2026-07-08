@@ -1,8 +1,8 @@
-Repository validation report -- diagnostic merge release candidate
+Repository validation report -- diagnostic merge and public-release license patch v1
 
 Status: PASS
 
-Validation performed after merging the curated public-safe diagnostic folder into results/diagnostic/.
+Validation performed after merging the curated public-safe diagnostic folder into results/diagnostic/ and after selecting public-release licenses.
 
 Checks performed:
 - Required manuscript-facing files are present.
@@ -11,9 +11,11 @@ Checks performed:
 - Table 6 remains present with 8 rows and includes R02A core_only rows for LR_L2 and LinearSVM.
 - results/diagnostic/ contains public-safe R01/R03/R04/R05/R06/R07 diagnostic traceability CSVs and README.md.
 - No R08 metric file is included in results/diagnostic/.
+- LICENSE now contains the selected MIT License for code/scripts.
+- DATA_LICENSE.md now documents CC BY 4.0 for public-safe author-prepared benchmark materials and excludes third-party/restricted source materials not redistributed here.
 
 scripts/validate_repository.py output:
 VALIDATION_STATUS: PASS
 
 Interpretation:
-This repository snapshot is suitable as a GitHub release-readiness candidate for reviewer-facing traceability, pending author/institutional decisions on final license, reviewer access, and archival DOI.
+This repository snapshot is suitable as a GitHub public-release candidate for reviewer-facing traceability, pending creation of a GitHub release and Zenodo archival DOI.

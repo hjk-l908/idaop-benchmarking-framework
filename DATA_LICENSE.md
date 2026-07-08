@@ -1,19 +1,27 @@
-# Data and reuse license status
+# Data and documentation reuse license
 
-This repository is currently a private pre-submission staging repository.
+This repository is prepared as a submission-ready public release candidate for the iDAOP antioxidant peptide benchmarking framework.
 
-No public reuse license is granted yet for the dataset tables, split manifests, embeddings, results, or supplementary materials until institutional, source-database, journal, and archival-release compatibility have been confirmed.
+## Code license
 
-## Intended public-release direction
+Source code, command wrappers, validation scripts, and software-oriented configuration files in this repository are released under the MIT License. See `LICENSE`.
 
-The intended public-release model is:
+## Public-safe benchmark materials
 
-- Code and command wrappers: MIT or BSD-3-Clause, pending institutional approval.
-- Dataset tables, split manifests, result tables, QC reports, and documentation: CC BY 4.0 or another compatible data/documentation license, pending source-database and journal-policy confirmation.
-- Large binary embedding files: to be released either through GitHub, Zenodo, or both, only after final archival and size-policy decisions.
+Author-prepared public-safe benchmark materials in this repository are released under the Creative Commons Attribution 4.0 International License (CC BY 4.0), unless a file states otherwise.
 
-## Current boundary
+This CC BY 4.0 scope includes public-safe branch manifests, split manifests, summary tables, diagnostic CSV summaries, QC reports, documentation, figure assets, and supplementary mapping files included in this repository.
 
-Until a final release license is selected and this repository is published from a clean public-release snapshot, all materials remain part of a private manuscript-facing reproducibility draft.
+## Attribution
 
-Do not redistribute, reuse, or cite this repository as a public release until the final license, DOI, and citation metadata are confirmed.
+When reusing repository materials, cite the associated manuscript and the archived repository DOI once available. Before DOI assignment, cite the GitHub repository URL and the manuscript title.
+
+## Third-party and restricted-material boundary
+
+This license applies only to author-prepared public-safe files included in this repository. It does not grant rights over third-party source databases, external records, source PDFs, validation PDFs, restricted raw materials, or other materials that are not redistributed here.
+
+No source PDFs, validation PDFs, restricted source archives, or non-public raw source materials are intentionally distributed in this repository. Users are responsible for complying with the terms of any upstream resources they access separately.
+
+## No warranty
+
+Materials are provided for research transparency and reproducibility support. They are provided as-is, without warranty, and are not a clinical, diagnostic, therapeutic, or standalone antioxidant peptide prediction service.

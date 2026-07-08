@@ -10,13 +10,15 @@ It does not claim stable frozen ESM-2 superiority over transparent AAC baselines
 
 ## Current release status
 
-**Status:** Phase 2 filled draft / internal pre-submission release candidate.
+**Status:** Submission-ready public repository snapshot for journal review and Zenodo archival DOI preparation.
 
-This package now contains real source tables, split manifests, QC logs, environment versions, scripts, and retained-assignment R02A documentation. `CITATION.cff` now lists the manuscript author names without ORCID identifiers. This repository is still not a final public release until DOI, licensing, and journal-specific availability statements are confirmed.
+This package contains source tables, split manifests, QC logs, environment versions, scripts, retained-assignment R02A documentation, diagnostic traceability files, and standalone Figure 1 assets. `CITATION.cff` lists the manuscript author names without ORCID identifiers. The archival DOI and final release tag should be added after the GitHub release is archived through Zenodo.
 
 ## License and reuse status
 
-This private staging repository does not yet grant a public reuse license. Code, data, split manifests, embeddings, results, and supplementary materials remain under provisional pre-submission review until institutional, source-database, journal, DOI, and archival-release decisions are finalized. See `LICENSE` and `DATA_LICENSE.md`.
+- Code, command wrappers, validation scripts, and software-oriented configuration files are released under the MIT License. See `LICENSE`.
+- Public-safe author-prepared benchmark materials, documentation, result summaries, diagnostic tables, QC reports, supplementary maps, and figure assets are released under CC BY 4.0 unless otherwise stated. See `DATA_LICENSE.md`.
+- These licenses do not grant rights over third-party source databases, source PDFs, validation PDFs, restricted source materials, or external records not redistributed in this repository.
 
 ## Key branch policy
 
@@ -51,7 +53,7 @@ The original cluster-generation command/script was not recovered. Therefore, R02
 - `qc/` -- QC manifest and JSON evidence for embedding, split matching, classifier execution, and R02A addendum.
 - `environment/` -- confirmed package versions and environment files.
 - `figures/` -- standalone Figure 1 assets for submission, including vector SVG and high-resolution PNG versions.
-- `scripts/` -- analysis and QC scripts used to trace PLM outputs and validate this repository draft.
+- `scripts/` -- analysis and QC scripts used to trace PLM outputs and validate this repository snapshot.
 - `supplementary/` -- supplementary material map and R02A retained-assignment documentation.
 - `docs/` -- GitHub Pages draft landing page.
 
@@ -71,11 +73,10 @@ Expected output:
 VALIDATION_STATUS: PASS
 ```
 
-## Remaining release blockers
+## Final archival tasks
 
-- Select and confirm repository license(s) for code and data.
-- Review author names/order in `CITATION.cff`; ORCID identifiers are not listed in this repository snapshot per current author-side decision.
-- Fill final DOI, release date/tag, and archival citation metadata after author/institutional confirmation.
-- Confirm target journal data/code availability wording.
-- Decide whether large binary embedding files should be hosted in GitHub, Zenodo, or both.
-- Run final public-safety scrub before making the repository public.
+- Make the repository public after final safety review.
+- Create a GitHub release, recommended tag: `v1.0.0`.
+- Archive the release through Zenodo and obtain a DOI.
+- Add the DOI and release date to `CITATION.cff`, `README.md`, and manuscript data-availability materials.
+- Confirm whether large binary embedding files should remain in GitHub, Zenodo, or both for the final archive.

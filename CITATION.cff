@@ -1,7 +1,7 @@
 cff-version: 1.2.0
-message: "This repository is a private pre-submission staging repository. Please do not cite or reuse as a public release until the final archived release, DOI, license, and citation metadata are confirmed."
+message: "If you use this repository, please cite the associated manuscript and the archived repository DOI once available. This pre-DOI metadata describes the submission-ready GitHub repository snapshot."
 title: "iDAOP: Antioxidant Peptide Benchmarking Framework"
-version: "phase2-filled-1.0"
+version: "1.0.0"
 authors:
   - family-names: "Kao"
     given-names: "Hui-Ju"
