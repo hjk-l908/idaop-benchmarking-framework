@@ -2,7 +2,11 @@
 
 This folder provides standalone manuscript figure assets for journal submission and reviewer traceability.
 
-- `Figure_1_branch_aware_framework.svg`: standalone vector version of Figure 1. It contains the branch counts (positive-core n = 899; core-negative n = 29; sensitivity-negative n = 3; challenge-only n = 28), the evaluation-control lanes, baseline/comparator roles, and the benchmark/evaluation-framework claim boundary.
-- `Figure_1_branch_aware_framework.png`: high-resolution raster export generated from the SVG for systems that require a raster figure file.
+Current Figure 1 assets:
 
-The figure intentionally contains no DOI, manuscript version number, or claim that frozen ESM-2 is superior. R03/R04/R05/R06/R07 remain diagnostic/pilot-level provenance evidence, and R08 remains attempted but non-interpreted.
+- `Figure_1.tif`: submission-ready raster version of Figure 1 (300 dpi metadata; 3600 x 2700 px).
+- `Figure_1.png`: preview/manuscript-check version of the same Figure 1 artwork (300 dpi metadata; 3600 x 2700 px).
+
+Figure 1 summarizes the branch-aware iDAOP antioxidant peptide benchmark and evaluation framework. It preserves the branch counts, permitted-use boundaries, evaluation controls, transparent AAC_reference baseline role, controlled frozen ESM-2 comparison, diagnostic traceability, and claim boundary described in the manuscript.
+
+The figure intentionally contains no ORCID identifiers, no unsupported model-superiority claim, and no reinterpretation of R08. R03/R04/R05/R06/R07 remain diagnostic/pilot-level provenance evidence, and R08 remains attempted but non-interpreted.
