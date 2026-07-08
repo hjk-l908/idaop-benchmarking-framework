@@ -12,7 +12,7 @@ It does not claim stable frozen ESM-2 superiority over transparent AAC baselines
 
 **Status:** Phase 2 filled draft / internal pre-submission release candidate.
 
-This package now contains real source tables, split manifests, QC logs, environment versions, scripts, and retained-assignment R02A documentation. It is still not a final public release until author, DOI, licensing, and journal-specific availability statements are confirmed.
+This package now contains real source tables, split manifests, QC logs, environment versions, scripts, and retained-assignment R02A documentation. `CITATION.cff` now lists the manuscript author names without ORCID identifiers. This repository is still not a final public release until DOI, licensing, and journal-specific availability statements are confirmed.
 
 ## License and reuse status
 
@@ -74,7 +74,8 @@ VALIDATION_STATUS: PASS
 ## Remaining release blockers
 
 - Select and confirm repository license(s) for code and data.
-- Fill final authors, affiliation, ORCID, repository URL, and DOI in `CITATION.cff`.
+- Review author names/order in `CITATION.cff`; ORCID identifiers are not listed in this repository snapshot per current author-side decision.
+- Fill final DOI, release date/tag, and archival citation metadata after author/institutional confirmation.
 - Confirm target journal data/code availability wording.
 - Decide whether large binary embedding files should be hosted in GitHub, Zenodo, or both.
 - Run final public-safety scrub before making the repository public.

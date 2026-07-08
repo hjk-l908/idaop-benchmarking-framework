@@ -3,7 +3,8 @@
 Before making this repository public:
 
 - Confirm repository name and GitHub URL.
-- Confirm authors, affiliations, ORCID, and citation metadata in `CITATION.cff`.
+- Review author names/order in `CITATION.cff`; ORCID identifiers are not listed in this repository snapshot per current author-side decision.
+- Confirm final DOI, release date/tag, and archival citation metadata before public release.
 - Choose final code/data license(s).
 - Archive release on Zenodo or equivalent and fill DOI.
 - Confirm target journal data/code availability wording.

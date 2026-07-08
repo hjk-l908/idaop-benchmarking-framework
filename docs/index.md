@@ -31,4 +31,4 @@ Start with:
 
 ## Citation
 
-Citation metadata remains to be finalized in `CITATION.cff` after authors, DOI, and release date are confirmed.
+`CITATION.cff` lists the manuscript author names without ORCID identifiers. DOI, release date/tag, and final archival citation metadata remain to be finalized after author and institutional confirmation.
