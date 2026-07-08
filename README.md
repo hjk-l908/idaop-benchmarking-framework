@@ -47,12 +47,17 @@ The original cluster-generation command/script was not recovered. Therefore, R02
 
 - `data/` -- branch manifest, full embedding input manifest, sequence order and branch summaries.
 - `splits/` -- random-CV manifests, retained R02A assignment, R02A sensplus and core-only manifests.
-- `results/` -- Table 6 source table, paired statistics, PLM aggregate/per-fold metrics, sensitivity behavior, AAC R02A core-only outputs.
+- `results/` -- Table 6 source table, paired statistics, PLM aggregate/per-fold metrics, sensitivity behavior, AAC R02A core-only outputs, and diagnostic/pilot-level traditional-baseline traceability files in `results/diagnostic/`.
 - `qc/` -- QC manifest and JSON evidence for embedding, split matching, classifier execution, and R02A addendum.
 - `environment/` -- confirmed package versions and environment files.
+- `figures/` -- standalone Figure 1 assets for submission, including vector SVG and high-resolution PNG versions.
 - `scripts/` -- analysis and QC scripts used to trace PLM outputs and validate this repository draft.
 - `supplementary/` -- supplementary material map and R02A retained-assignment documentation.
 - `docs/` -- GitHub Pages draft landing page.
+
+## Diagnostic traceability files
+
+`results/diagnostic/` contains public-safe R01/R03/R04/R05/R06/R07 diagnostic CSV summaries used to restore reviewer-facing traceability for staged traditional-baseline and feature-family checks. These files are diagnostic/pilot-level provenance only; they do not replace the primary AAC_reference + L2 Logistic Regression baseline, do not promote AAC_plus_physchem or CKSAAP_k1 to main evidence, and do not support any claim of stable frozen ESM-2 superiority. R08 hard-split CKSAAP produced no usable public metric output and is intentionally not included or interpreted.
 
 ## Quick validation
 

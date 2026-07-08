@@ -15,3 +15,4 @@ sequence_md5,MD5 hash of the peptide sequence used for traceability without chan
 status,QC or inclusion status for the row,PASS; CHECK; FAIL,yes
 source_reference,Source or provenance reference for the sequence,recommended if available,recommended
 notes,Free-text notes for provenance or branch-specific caveats,,optional
+branch_legacy_synonym_negative_core,Legacy R02A/split-file branch value negative_core is equivalent to the canonical branch value core_negative; no relabeling or branch reassignment is implied.,negative_core = core_negative,documentation note

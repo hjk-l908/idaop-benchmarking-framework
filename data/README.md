@@ -9,3 +9,8 @@ This folder contains public-facing, reviewer-traceable dataset manifests used fo
 - `full_embedding_label_branch_manifest_1_0.csv`: label/branch eligibility manifest.
 
 Challenge-only rows are retained for post hoc scoring/stress-test purposes only and must not appear in training/CV manifests.
+
+## Branch vocabulary note
+
+The canonical public branch vocabulary is `positive_core`, `core_negative`, `negative_sensitivity`, and `challenge_only`. In retained R02A/split files, the legacy value `negative_core` is used in some columns or filenames as a synonym of the canonical `core_negative` branch. This is a naming compatibility note only; it does not imply relabeling, branch reassignment, or a change to headline negative handling.
+

@@ -22,26 +22,27 @@ Prepared for manuscript, supplementary materials, and GitHub repository release.
 Primary retained source file:
 
 ```text
-PILOT_R02A_sequence_cluster_hard_split_assignments.csv
+splits/PILOT_R02A_sequence_cluster_hard_split_assignments.csv
 ```
 
-Downstream PLM source assignment file:
+Downstream R02A source assignment and train/test manifests:
 
 ```text
-splits/r02a_hard_split_source_assignments.csv
-```
-
-Downstream PLM train/test manifest:
-
-```text
+splits/r02a_hard_split_source_assignments_1_0.csv
+splits/r02a_hard_split_sensplus_manifest.csv
+splits/r02a_hard_split_core_only_manifest.csv
 splits/r02a_hard_split_manifest.csv
 ```
 
+Terminology note: `R02A` is the manuscript-facing stage name. Legacy `P02A`/`p02a` prefixes used in filenames or column names refer to the same retained-assignment sequence-cluster hard-split stress test.
+
 | File | Rows x columns | SHA256 |
 |---|---:|---|
-| PILOT_R02A_sequence_cluster_hard_split_assignments.csv | 177 x 27 | 114d996a6ab5cfda90c44dc369691a1472f8b50c0dad2eab0a07da862fa25030 |
-| plm_r02a_hard_split_source_assignments_1_0.csv | 177 x 17 | d0ccb6e96e3e2462e60ddc78830e5001e8fff1da67c6506a28f99d61d81bda94 |
-| plm_r02a_hard_split_train_test_manifest_1_0.csv | 708 x 13 | f033f06584aa3feec98395f93b3f8daf6182ff1c5b80e22c6d3620f9735f3bb0 |
+| splits/PILOT_R02A_sequence_cluster_hard_split_assignments.csv | 177 x 27 | a74707d1ddbf8cc847d9587112ffffcc0052234abe4e2695a65b3621c21d4ef1 |
+| splits/r02a_hard_split_source_assignments_1_0.csv | 177 x 17 | d0ccb6e96e3e2462e60ddc78830e5001e8fff1da67c6506a28f99d61d81bda94 |
+| splits/r02a_hard_split_sensplus_manifest.csv | 708 x 13 | f033f06584aa3feec98395f93b3f8daf6182ff1c5b80e22c6d3620f9735f3bb0 |
+| splits/r02a_hard_split_core_only_manifest.csv | 696 x 19 | 5091e959a3fa66319f19a65fc666b3d6dcfe63d407cb8c0f293f28ff2924f3d0 |
+| splits/r02a_hard_split_manifest.csv | 1404 x 20 | ac71d2156105a3dfb8bd477b9aecc3dd792a1d62d70d366eeaf0e23e0a0966b8 |
 
 ## 3. Retained R02A assignment summary
 
@@ -79,6 +80,8 @@ Operational interpretation: sequences were assigned into connected components ba
 
 Interpretation note: the core-only hard-split analysis excludes sensitivity-negative rows, whereas the sensplus analysis includes them as sensitivity cases. Challenge-only sequences must remain excluded from training, cross-validation, thresholding, and headline metrics.
 
+Legacy `negative_core` branch-label note: some retained R02A/split files use `negative_core` to denote the same branch that the public data dictionary names `core_negative`. This is a legacy naming synonym only; no relabeling or branch reassignment is implied.
+
 ## 6. What should not be claimed
 
 | Do not write | Use instead |
@@ -115,16 +118,11 @@ The original command or script used to generate the R02A retained assignment was
 We agree that R02A should not be overinterpreted as a fully regenerable clustering protocol. We now describe R02A as a retained-assignment sequence-cluster hard-split stress test, provide the retained assignment and downstream manifests, and explicitly state that the original cluster-generation command was not recovered. All R02A conclusions have been restricted to descriptive stress-test evidence.
 ```
 
-## 8. Public-release checklist
+## 8. Public-release status note
 
-- [ ] Confirm final public-safe file name for `PILOT_R02A_sequence_cluster_hard_split_assignments.csv`.
-- [ ] Remove server-private absolute paths, hostnames, usernames, and draft-only comments from public release files.
-- [ ] Add SHA256 checksums for retained assignment and downstream manifests.
-- [ ] Place R02A retained-assignment documentation in Supplementary File S7 and GitHub documentation folder.
-- [ ] Ensure Table 6 caption labels R02A rows as descriptive-only.
-- [ ] Ensure Methods and Limitations do not claim CD-HIT, MMseqs2, or any external tool unless evidence is later recovered.
-- [ ] Ensure challenge-only sequences are absent from all R02A train/test manifests.
-- [ ] Ensure sensitivity negatives remain separate and are excluded from core-only rows.
+The R02A retained-assignment documentation has been reconciled for the v2.1.1 public-facing release candidate. The retained source filenames are current, SHA-256 records are provided in `metadata/SHA256SUMS.txt`, R02A is described as descriptive-only in manuscript-facing wording, no external clustering-tool claim is made without recovered evidence, challenge-only sequences remain absent from R02A train/test manifests, and sensitivity-negative rows remain separate from core-only rows.
+
+A final public-safety scan should still be repeated after any future author-side release changes, DOI updates, licensing changes, or repository restructuring.
 
 ## 9. Final recommended conclusion
 

@@ -7,3 +7,9 @@
 - `PILOT_R02A_sequence_cluster_hard_split_assignments.csv`: retained source assignment file.
 
 R02A is not a newly regenerated CD-HIT/MMseqs2/BLAST split. It is a retained-assignment stress split using the recorded rule: exact + provided same-length identity80 + substring-containment connected components.
+
+## Terminology notes
+
+- `R02A` is the manuscript-facing name for the retained-assignment sequence-cluster hard-split stress test. Legacy `P02A`/`p02a` prefixes in filenames or column names refer to the same retained-assignment hard-split entity.
+- Some retained R02A/split files use the legacy branch label `negative_core`; this is equivalent to the canonical `core_negative` branch documented in `data/data_dictionary.csv`. No branch reassignment or relabeling is implied.
+

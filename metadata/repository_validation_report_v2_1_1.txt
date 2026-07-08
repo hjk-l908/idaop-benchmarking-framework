@@ -1,0 +1,19 @@
+Repository validation report v2.1.1
+Status: PASS
+
+Validation command:
+python scripts/validate_repository.py
+
+Output:
+VALIDATION_STATUS: PASS
+
+Manifest/checksum reconciliation:
+- metadata/package_file_manifest.csv and metadata/SHA256SUMS.txt were regenerated after the v2.1.1 cosmetic patch.
+- Self-referential files metadata/package_file_manifest.csv and metadata/SHA256SUMS.txt are excluded from their own inventory.
+- Repository validation and manifest/checksum checks passed before packaging.
+
+DOCX render QA:
+- Supplementary R02A DOCX was rendered after removing the legacy checklist table; visual QA passed for the updated status-note section.
+
+Scientific scope:
+This cosmetic patch did not change Table 6, split assignments, branch membership, diagnostic result files, or PLM/AAC interpretation.
