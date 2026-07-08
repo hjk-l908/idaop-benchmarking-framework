@@ -10,9 +10,9 @@ It does not claim stable frozen ESM-2 superiority over transparent AAC baselines
 
 ## Current release status
 
-**Status:** Submission-ready public repository snapshot for journal review and Zenodo archival DOI preparation.
+**Status:** Submission-ready public repository snapshot archived as GitHub release `v1.0.1` with Zenodo DOI `10.5281/zenodo.21254963`.
 
-This package contains source tables, split manifests, QC logs, environment versions, scripts, retained-assignment R02A documentation, diagnostic traceability files, and standalone Figure 1 assets. `CITATION.cff` lists the manuscript author names without ORCID identifiers. The archival DOI and final release tag should be added after the GitHub release is archived through Zenodo.
+This package contains source tables, split manifests, QC logs, environment versions, scripts, retained-assignment R02A documentation, diagnostic traceability files, and standalone Figure 1 assets. `CITATION.cff` lists the manuscript author names without ORCID identifiers and records the archived release DOI.
 
 ## License and reuse status
 
@@ -76,7 +76,23 @@ VALIDATION_STATUS: PASS
 ## Final archival tasks
 
 - Make the repository public after final safety review.
-- Create a GitHub release, recommended tag: `v1.0.0`.
-- Archive the release through Zenodo and obtain a DOI.
-- Add the DOI and release date to `CITATION.cff`, `README.md`, and manuscript data-availability materials.
-- Confirm whether large binary embedding files should remain in GitHub, Zenodo, or both for the final archive.
+- GitHub release `v1.0.1` has been archived through Zenodo.
+- Zenodo DOI: https://doi.org/10.5281/zenodo.21254963.
+- Confirm whether large binary embedding files should remain in GitHub, Zenodo, or both for future releases.
+
+
+## Release and citation metadata
+
+- GitHub repository: https://github.com/hjk-l908/idaop-benchmarking-framework
+- GitHub release: `v1.0.1` (https://github.com/hjk-l908/idaop-benchmarking-framework/releases/tag/v1.0.1)
+- Zenodo DOI: https://doi.org/10.5281/zenodo.21254963
+- Release date: 2026-07-08
+- Code license: MIT License
+- Public-safe benchmark materials and documentation: CC BY 4.0, as described in `DATA_LICENSE.md`
+- ORCID identifiers are not listed in this repository snapshot per current author-side decision.
+
+## Post-release maintenance notes
+
+- Do not add source PDFs, validation PDFs, restricted source archives, raw FASTA/FA source files, credentials, API tokens, or private execution paths to future public releases.
+- If additional files are added after this release, re-run repository validation, checksum verification, and public-safety review before minting a new archived release.
+- Large binary embedding-file hosting decisions for future releases should be documented before any new archival release.

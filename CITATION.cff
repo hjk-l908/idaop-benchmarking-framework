@@ -1,7 +1,11 @@
 cff-version: 1.2.0
-message: "If you use this repository, please cite the associated manuscript and the archived repository DOI once available. This pre-DOI metadata describes the submission-ready GitHub repository snapshot."
+message: "If you use this repository, please cite the associated manuscript and the archived repository release DOI."
 title: "iDAOP: Antioxidant Peptide Benchmarking Framework"
-version: "1.0.0"
+version: "1.0.1"
+doi: "10.5281/zenodo.21254963"
+date-released: "2026-07-08"
+repository-code: "https://github.com/hjk-l908/idaop-benchmarking-framework"
+url: "https://doi.org/10.5281/zenodo.21254963"
 authors:
   - family-names: "Kao"
     given-names: "Hui-Ju"
@@ -15,7 +19,6 @@ authors:
     given-names: "Kai-Yao"
   - family-names: "Weng"
     given-names: "Shun-Long"
-repository-code: "https://github.com/hjk-l908/idaop-benchmarking-framework"
 abstract: "Manuscript-facing benchmark and evaluation framework for antioxidant peptide prediction studies, including branch-aware dataset manifests, transparent AAC baseline evaluation, retained-assignment R02A descriptive stress testing, and a controlled frozen ESM-2 comparison."
 keywords:
   - antioxidant peptides
@@ -24,3 +27,4 @@ keywords:
   - AAC baseline
   - ESM-2
   - reproducibility
+license: "MIT AND CC-BY-4.0"

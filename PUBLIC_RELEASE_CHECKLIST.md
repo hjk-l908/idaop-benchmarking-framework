@@ -1,6 +1,6 @@
 # Public release checklist
 
-This checklist records the status of the iDAOP repository before public GitHub release and Zenodo archival DOI generation.
+This checklist records the completed public GitHub release and Zenodo archival DOI status for the iDAOP repository.
 
 ## Completed before public release
 
@@ -15,11 +15,18 @@ This checklist records the status of the iDAOP repository before public GitHub r
 - [x] Scientific boundary retained: iDAOP is a benchmark/evaluation framework, not a standalone predictor or web server.
 - [x] Scientific boundary retained: frozen ESM-2 is a controlled comparator and does not support a stable-superiority claim over AAC_reference.
 
-## Remaining release actions
+## Completed release actions
 
-- [ ] Change repository visibility from private to public after final user confirmation.
-- [ ] Create GitHub release, recommended tag: `v1.0.0`.
-- [ ] Archive the GitHub release through Zenodo.
-- [ ] Add Zenodo DOI, release date, and archival citation metadata to `CITATION.cff`, `README.md`, manuscript data availability text, and the BIB submission package.
+- [x] Change repository visibility from private to public after final user confirmation.
+- [x] Create GitHub release `v1.0.1` for Zenodo archival DOI generation.
+- [x] Archive GitHub release `v1.0.1` through Zenodo: https://doi.org/10.5281/zenodo.21254963.
+- [x] Add Zenodo DOI `10.5281/zenodo.21254963` and release date `2026-07-08` to repository citation metadata; manuscript/package sync prepared separately.
 - [ ] Confirm whether large binary embedding files should remain in GitHub, Zenodo, or both.
-- [ ] Re-run final repository validation and checksum verification after DOI metadata is added.
+- [x] Re-run final repository validation and checksum verification after DOI metadata is added.
+
+
+## Release citation
+
+- GitHub release: `v1.0.1` (https://github.com/hjk-l908/idaop-benchmarking-framework/releases/tag/v1.0.1)
+- Zenodo DOI: https://doi.org/10.5281/zenodo.21254963
+- Release date: 2026-07-08

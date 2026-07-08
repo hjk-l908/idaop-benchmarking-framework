@@ -2,7 +2,7 @@
 
 This project page accompanies a manuscript-facing benchmark and evaluation framework for antioxidant peptide prediction studies.
 
-> Release status: This repository is a submission-ready public repository snapshot for journal review and Zenodo archival DOI preparation. DOI and release-date metadata will be finalized after the GitHub release is archived.
+> Release status: This repository is a submission-ready public repository snapshot archived as GitHub release `v1.0.1` with Zenodo DOI `10.5281/zenodo.21254963`.
 
 **iDAOP is not a new standalone predictor or web server.** It supports branch-aware dataset governance, transparent AAC baseline evaluation, retained-assignment R02A descriptive stress testing, and a controlled frozen ESM-2 comparison.
 
@@ -34,7 +34,7 @@ Start with:
 
 ## Citation
 
-`CITATION.cff` lists the manuscript author names without ORCID identifiers. The Zenodo DOI, release date/tag, and final archival citation metadata should be added after the GitHub release is archived.
+`CITATION.cff` lists the manuscript author names without ORCID identifiers and records the archived release DOI: https://doi.org/10.5281/zenodo.21254963.
 
 ## License
 

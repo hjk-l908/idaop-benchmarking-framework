@@ -21,3 +21,8 @@ This note does not replace future safety review if new files are added. Any futu
 ## Release-history note
 
 This public-release metadata patch updates the current `main` tree. If maintainers later discover that earlier Git history contains sensitive artifacts, the public archive should instead be generated from a clean snapshot or a history-cleaned repository before wider dissemination.
+
+
+## DOI-sync release note
+
+After public release and Zenodo archival, the repository citation metadata was synchronized with GitHub release `v1.0.1` and Zenodo DOI https://doi.org/10.5281/zenodo.21254963. Future releases should repeat repository validation, checksum verification, and public-safety review before archive DOI generation.
