@@ -10,9 +10,9 @@ It does not claim stable frozen ESM-2 superiority over transparent AAC baselines
 
 ## Current release status
 
-**Status:** Submission-ready public repository snapshot archived as GitHub release `v1.0.1` with Zenodo DOI `10.5281/zenodo.21254963`.
+**Status:** Submission-ready public repository snapshot archived as GitHub release `v1.0.3`, which is intended for Zenodo archival after correcting citation metadata for DOI generation.
 
-This package contains source tables, split manifests, QC logs, environment versions, scripts, retained-assignment R02A documentation, diagnostic traceability files, and standalone Figure 1 assets. `CITATION.cff` lists the manuscript author names without ORCID identifiers and records the archived release DOI.
+This package contains source tables, split manifests, QC logs, environment versions, scripts, retained-assignment R02A documentation, diagnostic traceability files, and standalone Figure 1 assets. `CITATION.cff` lists the manuscript author names without ORCID identifiers and is prepared for Zenodo DOI generation for the release snapshot.
 
 ## License and reuse status
 
@@ -76,16 +76,16 @@ VALIDATION_STATUS: PASS
 ## Final archival tasks
 
 - Make the repository public after final safety review.
-- GitHub release `v1.0.1` has been archived through Zenodo.
-- Zenodo DOI: https://doi.org/10.5281/zenodo.21254963.
+- GitHub release `v1.0.3` is intended for Zenodo archival after citation metadata correction.
+- Use the DOI displayed on the Zenodo record after successful archival.
 - Confirm whether large binary embedding files should remain in GitHub, Zenodo, or both for future releases.
 
 
 ## Release and citation metadata
 
 - GitHub repository: https://github.com/hjk-l908/idaop-benchmarking-framework
-- GitHub release: `v1.0.1` (https://github.com/hjk-l908/idaop-benchmarking-framework/releases/tag/v1.0.1)
-- Zenodo DOI: https://doi.org/10.5281/zenodo.21254963
+- GitHub release: `v1.0.3` (https://github.com/hjk-l908/idaop-benchmarking-framework/releases/tag/v1.0.3)
+- Zenodo DOI: to be assigned by Zenodo for this release snapshot
 - Release date: 2026-07-08
 - Code license: MIT License
 - Public-safe benchmark materials and documentation: CC BY 4.0, as described in `DATA_LICENSE.md`

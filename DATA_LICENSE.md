@@ -14,7 +14,7 @@ This CC BY 4.0 scope includes public-safe branch manifests, split manifests, sum
 
 ## Attribution
 
-When reusing repository materials, cite the associated manuscript and the archived repository release DOI: https://doi.org/10.5281/zenodo.21254963.
+When reusing repository materials, cite the associated manuscript and the Zenodo archived release DOI for the release version used.
 
 ## Third-party and restricted-material boundary
 

@@ -1,6 +1,6 @@
 # Public release checklist
 
-This checklist records the completed public GitHub release and Zenodo archival DOI status for the iDAOP repository.
+This checklist records the public GitHub release, licensing, and Zenodo archival status for the iDAOP repository.
 
 ## Completed before public release
 
@@ -18,15 +18,15 @@ This checklist records the completed public GitHub release and Zenodo archival D
 ## Completed release actions
 
 - [x] Change repository visibility from private to public after final user confirmation.
-- [x] Create GitHub release `v1.0.1` for Zenodo archival DOI generation.
+- [x] Create GitHub release `v1.0.1` for initial Zenodo archival DOI generation.
 - [x] Archive GitHub release `v1.0.1` through Zenodo: https://doi.org/10.5281/zenodo.21254963.
-- [x] Add Zenodo DOI `10.5281/zenodo.21254963` and release date `2026-07-08` to repository citation metadata; manuscript/package sync prepared separately.
+- [x] Prepare citation metadata correction for a subsequent `v1.0.3` Zenodo archival release after revised Figure 1 synchronization.
 - [ ] Confirm whether large binary embedding files should remain in GitHub, Zenodo, or both.
 - [x] Re-run final repository validation and checksum verification after DOI metadata is added.
 
 
 ## Release citation
 
-- GitHub release: `v1.0.1` (https://github.com/hjk-l908/idaop-benchmarking-framework/releases/tag/v1.0.1)
-- Zenodo DOI: https://doi.org/10.5281/zenodo.21254963
+- GitHub release: `v1.0.3` (https://github.com/hjk-l908/idaop-benchmarking-framework/releases/tag/v1.0.3)
+- Zenodo DOI: to be assigned by Zenodo for this release snapshot
 - Release date: 2026-07-08
