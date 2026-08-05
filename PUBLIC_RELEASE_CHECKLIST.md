@@ -15,7 +15,7 @@ This checklist records the public GitHub release, licensing, Zenodo archival, an
 - [x] Scientific boundary retained: iDAOP is a benchmark/evaluation framework, not a standalone predictor or web server.
 - [x] Scientific boundary retained: frozen ESM-2 is a controlled comparator and does not support a stable-superiority claim over AAC_reference.
 
-## Completed release actions
+## Completed release and candidate-preparation actions
 
 - [x] Create and archive GitHub release `v1.0.3`.
 - [x] Confirm v1.0.3 Zenodo DOI: https://doi.org/10.5281/zenodo.21270655.
@@ -28,10 +28,13 @@ This checklist records the public GitHub release, licensing, Zenodo archival, an
 
 - [ ] Review and approve the `v1.0.4-rc1` maintenance candidate.
 - [ ] Commit and push the candidate repository state.
+- [ ] Before tagging, set `CITATION.cff` `version` to `1.0.4`, replace the candidate `message`, and add `date-released: YYYY-MM-DD`.
 - [ ] Create GitHub release `v1.0.4`.
 - [ ] Archive GitHub release `v1.0.4` through Zenodo.
-- [ ] Add the final v1.0.4 DOI and release date to current-facing metadata.
-- [ ] Regenerate checksums after final DOI/date edits and verify the downloaded archive.
+- [ ] After Zenodo assigns it, add the actual final v1.0.4 DOI and release date to current-facing metadata; do not guess the DOI.
+- [ ] Regenerate `metadata/package_file_manifest.csv` and `metadata/SHA256SUMS.txt` after every final metadata edit.
+- [ ] Record the SHA-256 of `metadata/SHA256SUMS.txt` in the GitHub Release body or another external release audit record.
+- [ ] Extract the downloaded GitHub and Zenodo release archives and run `python scripts/verify_package_checksums.py` inside each extracted tree; do not treat a GitHub-generated archive-file hash as a stable identifier.
 - [ ] Update manuscript Data availability and Additional file 7 only after final archive verification.
 
 ## Release citation
@@ -40,4 +43,5 @@ This checklist records the public GitHub release, licensing, Zenodo archival, an
 - Current archived Zenodo DOI: https://doi.org/10.5281/zenodo.21270655
 - Maintenance candidate: `v1.0.4-rc1`
 - Candidate prepared: 2026-07-27
+- Independent audit reconciliation prepared: 2026-08-05
 - v1.0.4 DOI and release date: not yet assigned

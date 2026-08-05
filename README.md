@@ -14,7 +14,7 @@ It does not claim stable frozen ESM-2 superiority over transparent AAC baselines
 
 The currently archived public release remains GitHub release `v1.0.3` with Zenodo DOI https://doi.org/10.5281/zenodo.21270655. This candidate has not yet been published or assigned a v1.0.4 DOI.
 
-This package contains source tables, split manifests, QC logs, environment versions, scripts, retained-assignment R02A documentation, diagnostic traceability files, standalone Figure 1 assets, and a complete candidate-byte checksum inventory.
+This package contains source tables, split manifests, QC logs, environment versions, scripts, retained-assignment R02A documentation, diagnostic traceability files, standalone Figure 1 assets, and a candidate-byte checksum inventory covering every repository file except the inventory file itself.
 
 ## License and reuse status
 
@@ -84,8 +84,8 @@ CHECKSUM_STATUS: PASS
 - Commit the candidate with LF line endings preserved by `.gitattributes`.
 - Create GitHub release `v1.0.4`.
 - Archive the release through Zenodo and obtain the version-specific v1.0.4 DOI.
-- Replace candidate wording in current-facing metadata with the final release date and DOI.
-- Regenerate the manifest/checksum inventory after any final metadata edit, then verify the downloaded release archive.
+- Before tagging, convert `CITATION.cff` from `1.0.4-rc1` to final `1.0.4` metadata and add the release date; add the actual DOI to current-facing metadata only after Zenodo assigns it.
+- Regenerate the manifest/checksum inventory after any final metadata edit, then extract each downloaded release archive and run `python scripts/verify_package_checksums.py` inside the extracted tree.
 
 ## Release and citation metadata
 

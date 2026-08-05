@@ -14,10 +14,10 @@ Repository QA summary for maintenance candidate v1.0.4-rc1
 - Author metadata: CITATION.cff lists Hui-Ju Kao, Yu-Jie Weng, Chia-Hung Chen, Chen-Lin Yu, Kai-Yao Huang, and Shun-Long Weng; ORCID identifiers are not listed.
 - License metadata: code/scripts use MIT License; public-safe author-prepared benchmark materials and documentation use CC BY 4.0 as described in DATA_LICENSE.md.
 - Archive-byte policy: recognized repository text files use LF line endings; `.gitattributes` records the policy.
-- Manifest/checksum status: metadata/package_file_manifest.csv and metadata/SHA256SUMS.txt regenerated from candidate bytes.
+- Manifest/checksum status: metadata/package_file_manifest.csv and metadata/SHA256SUMS.txt regenerated from candidate bytes; checksum verification checks listed-file integrity and reverse inventory coverage, with SHA256SUMS.txt intentionally excluded from self-hashing.
 - Public-safety status: no intentionally distributed source PDFs, validation PDFs, restricted source archives, FASTA/FA raw source files, CIF files, credentials, API tokens, or concrete private execution paths were identified in the current public-facing file tree.
 
 Release status
 - Current archived public release: v1.0.3 at https://doi.org/10.5281/zenodo.21270655.
-- Current package: v1.0.4-rc1 maintenance candidate prepared 2026-07-27.
+- Current package: v1.0.4-rc1 maintenance candidate prepared 2026-07-27; independent audit reconciliation prepared 2026-08-05.
 - v1.0.4 version-specific DOI and final release date: not yet assigned.

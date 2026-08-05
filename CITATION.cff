@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "This is a v1.0.4 maintenance release candidate. Until v1.0.4 is publicly released and archived, cite the associated manuscript and the archived v1.0.3 Zenodo release."
+message: "This is a v1.0.4 maintenance release candidate. Until v1.0.4 is publicly released and archived, cite the associated manuscript and the archived v1.0.3 Zenodo release. Code is licensed under MIT; public-safe author-prepared benchmark materials are governed by CC BY 4.0 and the exclusions in DATA_LICENSE.md."
 title: "iDAOP: Antioxidant Peptide Benchmarking Framework"
 version: "1.0.4-rc1"
 repository-code: "https://github.com/hjk-l908/idaop-benchmarking-framework"

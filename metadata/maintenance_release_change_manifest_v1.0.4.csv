@@ -6,6 +6,9 @@ MAINTENANCE_RELEASE_NOTES_v1.0.4.md,added,maintenance metadata / archive consist
 PUBLIC_RELEASE_CHECKLIST.md,content updated,maintenance metadata / archive consistency
 README.md,content updated,maintenance metadata / archive consistency
 docs/index.md,content updated,maintenance metadata / archive consistency
+metadata/SHA256SUMS.txt,content updated,maintenance metadata / archive consistency
+metadata/maintenance_release_change_manifest_v1.0.4.csv,added,maintenance metadata / archive consistency
+metadata/package_file_manifest.csv,content updated,maintenance metadata / archive consistency
 metadata/repository_validation_report.txt,content updated,maintenance metadata / archive consistency
 scripts/verify_package_checksums.py,added,maintenance metadata / archive consistency
 supplementary/reproducibility_and_supplementary_materials_map_original_1_0.csv,content updated,maintenance metadata / archive consistency
