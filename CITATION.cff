@@ -1,8 +1,7 @@
 cff-version: 1.2.0
-message: "If you use this repository, please cite the associated manuscript and the Zenodo archived release DOI for the release version used."
+message: "This is a v1.0.4 maintenance release candidate. Until v1.0.4 is publicly released and archived, cite the associated manuscript and the archived v1.0.3 Zenodo release."
 title: "iDAOP: Antioxidant Peptide Benchmarking Framework"
-version: "1.0.3"
-date-released: "2026-07-08"
+version: "1.0.4-rc1"
 repository-code: "https://github.com/hjk-l908/idaop-benchmarking-framework"
 authors:
   - family-names: "Kao"

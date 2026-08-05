@@ -1,7 +1,9 @@
 VALIDATION_STATUS: PASS
 
-Repository QA summary after public-release license patch v1
+Repository QA summary for maintenance candidate v1.0.4-rc1
 - Core repository validation script: PASS.
+- Candidate scientific content boundary: no new analysis, model rerun, sequence relabeling, branch reassignment, split regeneration, metric change, or manuscript-claim expansion.
+- Branch counts retained: positive_core 899; core_negative 29; negative_sensitivity 3; challenge_only 28.
 - Diagnostic CSV files in results/diagnostic/: 19.
 - Diagnostic README present: yes.
 - R08 files in results/diagnostic/: 0.
@@ -11,8 +13,11 @@ Repository QA summary after public-release license patch v1
 - Standalone Figure 1 assets remain available in `figures/` with no predictor-superiority claim.
 - Author metadata: CITATION.cff lists Hui-Ju Kao, Yu-Jie Weng, Chia-Hung Chen, Chen-Lin Yu, Kai-Yao Huang, and Shun-Long Weng; ORCID identifiers are not listed.
 - License metadata: code/scripts use MIT License; public-safe author-prepared benchmark materials and documentation use CC BY 4.0 as described in DATA_LICENSE.md.
-- Manifest/checksum status: metadata/package_file_manifest.csv and metadata/SHA256SUMS.txt regenerated after the public-release license patch.
+- Archive-byte policy: recognized repository text files use LF line endings; `.gitattributes` records the policy.
+- Manifest/checksum status: metadata/package_file_manifest.csv and metadata/SHA256SUMS.txt regenerated from candidate bytes.
 - Public-safety status: no intentionally distributed source PDFs, validation PDFs, restricted source archives, FASTA/FA raw source files, CIF files, credentials, API tokens, or concrete private execution paths were identified in the current public-facing file tree.
 
-Remaining archival note
-- Zenodo DOI, final release date, and release tag should be added after the GitHub release is created and archived.
+Release status
+- Current archived public release: v1.0.3 at https://doi.org/10.5281/zenodo.21270655.
+- Current package: v1.0.4-rc1 maintenance candidate prepared 2026-07-27.
+- v1.0.4 version-specific DOI and final release date: not yet assigned.

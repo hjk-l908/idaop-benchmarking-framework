@@ -2,7 +2,7 @@
 
 This project page accompanies a manuscript-facing benchmark and evaluation framework for antioxidant peptide prediction studies.
 
-> Release status: This repository is a submission-ready public repository snapshot archived as GitHub release `v1.0.3`, which is intended for Zenodo archival after correcting citation metadata for DOI generation.
+> Release status: maintenance release candidate `v1.0.4-rc1`, prepared from archived release `v1.0.3` to correct archive-byte checksum consistency and stale current-status metadata. The current public archive remains v1.0.3 at https://doi.org/10.5281/zenodo.21270655.
 
 **iDAOP is not a new standalone predictor or web server.** It supports branch-aware dataset governance, transparent AAC baseline evaluation, retained-assignment R02A descriptive stress testing, and a controlled frozen ESM-2 comparison.
 
@@ -15,6 +15,7 @@ This project page accompanies a manuscript-facing benchmark and evaluation frame
 - QC manifests for embedding, split matching, classifier execution, and R02A core-only addendum
 - Environment and script inventory
 - Public-safe diagnostic traceability files for R01/R03/R04/R05/R06/R07 in `results/diagnostic/`
+- Candidate-byte package manifest and SHA-256 inventory
 
 ## Main result boundary
 
@@ -31,10 +32,11 @@ Start with:
 5. `supplementary/R02A_retained_assignment_documentation_1_0.md`
 6. `qc/qc_manifest.csv`
 7. `results/diagnostic/README.md`
+8. `MAINTENANCE_RELEASE_NOTES_v1.0.4.md`
 
 ## Citation
 
-`CITATION.cff` lists the manuscript author names without ORCID identifiers and is prepared for Zenodo DOI generation for the release snapshot.
+Until v1.0.4 is released and archived, cite the current archived v1.0.3 release using https://doi.org/10.5281/zenodo.21270655. The candidate `CITATION.cff` identifies itself as `1.0.4-rc1` and intentionally does not claim a final v1.0.4 release date or DOI.
 
 ## License
 

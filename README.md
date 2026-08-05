@@ -10,9 +10,11 @@ It does not claim stable frozen ESM-2 superiority over transparent AAC baselines
 
 ## Current release status
 
-**Status:** Submission-ready public repository snapshot archived as GitHub release `v1.0.3`, which is intended for Zenodo archival after correcting citation metadata for DOI generation.
+**Status:** Maintenance release candidate `v1.0.4-rc1`, prepared from the archived `v1.0.3` snapshot to correct archive-byte checksum consistency and stale release metadata.
 
-This package contains source tables, split manifests, QC logs, environment versions, scripts, retained-assignment R02A documentation, diagnostic traceability files, and standalone Figure 1 assets. `CITATION.cff` lists the manuscript author names without ORCID identifiers and is prepared for Zenodo DOI generation for the release snapshot.
+The currently archived public release remains GitHub release `v1.0.3` with Zenodo DOI https://doi.org/10.5281/zenodo.21270655. This candidate has not yet been published or assigned a v1.0.4 DOI.
+
+This package contains source tables, split manifests, QC logs, environment versions, scripts, retained-assignment R02A documentation, diagnostic traceability files, standalone Figure 1 assets, and a complete candidate-byte checksum inventory.
 
 ## License and reuse status
 
@@ -52,10 +54,11 @@ The original cluster-generation command/script was not recovered. Therefore, R02
 - `results/` -- Table 6 source table, paired statistics, PLM aggregate/per-fold metrics, sensitivity behavior, AAC R02A core-only outputs, and diagnostic/pilot-level traditional-baseline traceability files in `results/diagnostic/`.
 - `qc/` -- QC manifest and JSON evidence for embedding, split matching, classifier execution, and R02A addendum.
 - `environment/` -- confirmed package versions and environment files.
-- `figures/` -- standalone Figure 1 assets for submission, including vector SVG and high-resolution PNG versions.
+- `figures/` -- standalone Figure 1 assets for submission.
 - `scripts/` -- analysis and QC scripts used to trace PLM outputs and validate this repository snapshot.
 - `supplementary/` -- supplementary material map and R02A retained-assignment documentation.
 - `docs/` -- GitHub Pages draft landing page.
+- `metadata/` -- candidate-byte manifest, SHA-256 inventory, validation summaries, and maintenance change manifest.
 
 ## Diagnostic traceability files
 
@@ -65,28 +68,33 @@ The original cluster-generation command/script was not recovered. Therefore, R02
 
 ```bash
 python scripts/validate_repository.py
+python scripts/verify_package_checksums.py
 ```
 
 Expected output:
 
 ```text
 VALIDATION_STATUS: PASS
+CHECKSUM_STATUS: PASS
 ```
 
-## Final archival tasks
+## Final archival tasks for v1.0.4
 
-- Make the repository public after final safety review.
-- GitHub release `v1.0.3` is intended for Zenodo archival after citation metadata correction.
-- Use the DOI displayed on the Zenodo record after successful archival.
-- Confirm whether large binary embedding files should remain in GitHub, Zenodo, or both for future releases.
-
+- Review this maintenance candidate and confirm that no additional repository changes are required.
+- Commit the candidate with LF line endings preserved by `.gitattributes`.
+- Create GitHub release `v1.0.4`.
+- Archive the release through Zenodo and obtain the version-specific v1.0.4 DOI.
+- Replace candidate wording in current-facing metadata with the final release date and DOI.
+- Regenerate the manifest/checksum inventory after any final metadata edit, then verify the downloaded release archive.
 
 ## Release and citation metadata
 
 - GitHub repository: https://github.com/hjk-l908/idaop-benchmarking-framework
-- GitHub release: `v1.0.3` (https://github.com/hjk-l908/idaop-benchmarking-framework/releases/tag/v1.0.3)
-- Zenodo DOI: to be assigned by Zenodo for this release snapshot
-- Release date: 2026-07-08
+- Current archived GitHub release: `v1.0.3` (https://github.com/hjk-l908/idaop-benchmarking-framework/releases/tag/v1.0.3)
+- Current archived Zenodo DOI: https://doi.org/10.5281/zenodo.21270655
+- Maintenance candidate: `v1.0.4-rc1`
+- Candidate prepared: 2026-07-27
+- v1.0.4 DOI and release date: not yet assigned
 - Code license: MIT License
 - Public-safe benchmark materials and documentation: CC BY 4.0, as described in `DATA_LICENSE.md`
 - ORCID identifiers are not listed in this repository snapshot per current author-side decision.
@@ -94,5 +102,5 @@ VALIDATION_STATUS: PASS
 ## Post-release maintenance notes
 
 - Do not add source PDFs, validation PDFs, restricted source archives, raw FASTA/FA source files, credentials, API tokens, or private execution paths to future public releases.
-- If additional files are added after this release, re-run repository validation, checksum verification, and public-safety review before minting a new archived release.
+- If additional files are added after this candidate, re-run repository validation, checksum verification, and public-safety review before minting a new archived release.
 - Large binary embedding-file hosting decisions for future releases should be documented before any new archival release.

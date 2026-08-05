@@ -1,6 +1,6 @@
 # Public release checklist
 
-This checklist records the public GitHub release, licensing, and Zenodo archival status for the iDAOP repository.
+This checklist records the public GitHub release, licensing, Zenodo archival, and v1.0.4 maintenance-candidate status for the iDAOP repository.
 
 ## Completed before public release
 
@@ -17,16 +17,27 @@ This checklist records the public GitHub release, licensing, and Zenodo archival
 
 ## Completed release actions
 
-- [x] Change repository visibility from private to public after final user confirmation.
-- [x] Create GitHub release `v1.0.1` for initial Zenodo archival DOI generation.
-- [x] Archive GitHub release `v1.0.1` through Zenodo: https://doi.org/10.5281/zenodo.21254963.
-- [x] Prepare citation metadata correction for a subsequent `v1.0.3` Zenodo archival release after revised Figure 1 synchronization.
+- [x] Create and archive GitHub release `v1.0.3`.
+- [x] Confirm v1.0.3 Zenodo DOI: https://doi.org/10.5281/zenodo.21270655.
+- [x] Prepare maintenance candidate `v1.0.4-rc1` with LF line-ending policy and candidate-byte checksum regeneration.
+- [x] Add checksum verification script and GitHub Actions checksum validation step.
+- [x] Remove stale current-status statements that incorrectly described the v1.0.3 DOI as pending.
 - [ ] Confirm whether large binary embedding files should remain in GitHub, Zenodo, or both.
-- [x] Re-run final repository validation and checksum verification after DOI metadata is added.
 
+## Pending v1.0.4 release actions
+
+- [ ] Review and approve the `v1.0.4-rc1` maintenance candidate.
+- [ ] Commit and push the candidate repository state.
+- [ ] Create GitHub release `v1.0.4`.
+- [ ] Archive GitHub release `v1.0.4` through Zenodo.
+- [ ] Add the final v1.0.4 DOI and release date to current-facing metadata.
+- [ ] Regenerate checksums after final DOI/date edits and verify the downloaded archive.
+- [ ] Update manuscript Data availability and Additional file 7 only after final archive verification.
 
 ## Release citation
 
-- GitHub release: `v1.0.3` (https://github.com/hjk-l908/idaop-benchmarking-framework/releases/tag/v1.0.3)
-- Zenodo DOI: to be assigned by Zenodo for this release snapshot
-- Release date: 2026-07-08
+- Current archived GitHub release: `v1.0.3` (https://github.com/hjk-l908/idaop-benchmarking-framework/releases/tag/v1.0.3)
+- Current archived Zenodo DOI: https://doi.org/10.5281/zenodo.21270655
+- Maintenance candidate: `v1.0.4-rc1`
+- Candidate prepared: 2026-07-27
+- v1.0.4 DOI and release date: not yet assigned

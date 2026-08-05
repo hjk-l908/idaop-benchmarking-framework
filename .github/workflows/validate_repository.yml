@@ -14,3 +14,4 @@ jobs:
           python-version: '3.10'
       - run: pip install pandas
       - run: python scripts/validate_repository.py
+      - run: python scripts/verify_package_checksums.py

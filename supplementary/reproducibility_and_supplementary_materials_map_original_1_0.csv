@@ -5,4 +5,4 @@ S3,R01-R07 diagnostic baseline evidence package,"reviewed diagnostic baseline pa
 S4,Per-fold AAC and PLM metrics,per-fold metrics for AAC_reference and frozen ESM-2 matched comparisons including R02A core_only addendum,Ready after v0.5; verify paired-stat table
 S5,QC and run manifests,"split matching validation, embedding QC, classifier output QC, SHA-256 manifests",Ready for public-safety review; verify SHA-256 inventory after final merge
 S6,Sensitivity-negative behavior,"per-sequence behavior of VLDTDY, LKALPMH, IQKVAGTW under baseline and PLM settings",Ready; keep separate from headline branch
-S7,Code and environment inventory,"Python/package versions, seed list, command wrappers, feature generation and classifier scripts",AUTHOR TO CONFIRM: AAC environment and public repository DOI
+S7,Code and environment inventory,"Python/package versions, seed list, command wrappers, feature generation and classifier scripts",Public repository and archived release metadata are available; update to the final v1.0.4 DOI only after maintenance-release archival.
