@@ -3,7 +3,7 @@
 Key files:
 
 - `table6_plm_vs_aac.csv`: final matched PLM-vs-AAC source table.
-- `paired_stats.csv`: random-CV paired comparison statistics.
+- `paired_stats.csv`: corrected v1.0.4 candidate paired-comparison statistics. Random-CV inference uses 10 replicate-level pairs after within-replicate fold averaging; R02A rows remain descriptive-only with n = 4. The archived v1.0.3 file remains historical fold-level provenance.
 - `sensitivity_behavior.csv`: behavior of sensitivity-flagged negative cases under PLM models.
 - `plm_classifier_full_aggregate_summary_1_0.csv`: PLM aggregate metrics.
 - `plm_classifier_full_per_fold_metrics_1_0.csv`: PLM per-fold metrics.

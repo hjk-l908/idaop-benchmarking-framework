@@ -2,7 +2,7 @@
 
 This project page accompanies a manuscript-facing benchmark and evaluation framework for antioxidant peptide prediction studies.
 
-> Release status: maintenance release candidate `v1.0.4-rc1`, prepared from archived release `v1.0.3` to correct archive-byte checksum consistency and stale current-status metadata. The current public archive remains v1.0.3 at https://doi.org/10.5281/zenodo.21270655.
+> Release status: maintenance release candidate `v1.0.4-rc1`, prepared from archived release `v1.0.3` to correct archive-byte checksum consistency, stale current-status metadata, and the random-CV paired-inference unit. The candidate `results/paired_stats.csv` uses 10 replicate-level pairs for random-CV inference; the current public archive remains v1.0.3 at https://doi.org/10.5281/zenodo.21270655.
 
 **iDAOP is not a new standalone predictor or web server.** It supports branch-aware dataset governance, transparent AAC baseline evaluation, retained-assignment R02A descriptive stress testing, and a controlled frozen ESM-2 comparison.
 
@@ -11,7 +11,7 @@ This project page accompanies a manuscript-facing benchmark and evaluation frame
 - Branch-aware dataset manifests
 - R1-R10 random-CV and R02A retained-assignment hard-split manifests
 - Table 6 PLM-vs-AAC source table
-- Paired random-CV statistics
+- Replicate-level paired random-CV statistics (10 replicate pairs; R02A remains descriptive-only)
 - QC manifests for embedding, split matching, classifier execution, and R02A core-only addendum
 - Environment and script inventory
 - Public-safe diagnostic traceability files for R01/R03/R04/R05/R06/R07 in `results/diagnostic/`

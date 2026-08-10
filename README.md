@@ -10,7 +10,7 @@ It does not claim stable frozen ESM-2 superiority over transparent AAC baselines
 
 ## Current release status
 
-**Status:** Maintenance release candidate `v1.0.4-rc1`, prepared from the archived `v1.0.3` snapshot to correct archive-byte checksum consistency and stale release metadata.
+**Status:** Maintenance release candidate `v1.0.4-rc1`, prepared from the archived `v1.0.3` snapshot to correct archive-byte checksum consistency, stale release metadata, and the random-CV paired-inference unit. The v1.0.4 candidate uses 10 replicate-level pairs for paired random-CV inference; the archived v1.0.3 file remains historical fold-level provenance.
 
 The currently archived public release remains GitHub release `v1.0.3` with Zenodo DOI https://doi.org/10.5281/zenodo.21270655. This candidate has not yet been published or assigned a v1.0.4 DOI.
 

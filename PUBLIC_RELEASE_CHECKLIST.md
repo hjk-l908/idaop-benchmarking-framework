@@ -22,6 +22,8 @@ This checklist records the public GitHub release, licensing, Zenodo archival, an
 - [x] Prepare maintenance candidate `v1.0.4-rc1` with LF line-ending policy and candidate-byte checksum regeneration.
 - [x] Add checksum verification script and GitHub Actions checksum validation step.
 - [x] Remove stale current-status statements that incorrectly described the v1.0.3 DOI as pending.
+- [x] Correct random-CV paired inference in `results/paired_stats.csv` to use 10 replicate-level pairs after within-replicate fold averaging; preserve R02A as descriptive-only.
+- [x] Confirm that the paired-inference correction changes p values/confidence intervals only and does not rerun models or change Table 6 point estimates.
 - [ ] Confirm whether large binary embedding files should remain in GitHub, Zenodo, or both.
 
 ## Pending v1.0.4 release actions
@@ -35,6 +37,7 @@ This checklist records the public GitHub release, licensing, Zenodo archival, an
 - [ ] Regenerate `metadata/package_file_manifest.csv` and `metadata/SHA256SUMS.txt` after every final metadata edit.
 - [ ] Record the SHA-256 of `metadata/SHA256SUMS.txt` in the GitHub Release body or another external release audit record.
 - [ ] Extract the downloaded GitHub and Zenodo release archives and run `python scripts/verify_package_checksums.py` inside each extracted tree; do not treat a GitHub-generated archive-file hash as a stable identifier.
+- [ ] Regenerate the reviewer-facing Supplementary File S4 source inventory after the final v1.0.4 repository hashes are locked, so its `results/paired_stats.csv` hash matches the released file.
 - [ ] Update manuscript Data availability and Additional file 7 only after final archive verification.
 
 ## Release citation
@@ -44,4 +47,5 @@ This checklist records the public GitHub release, licensing, Zenodo archival, an
 - Maintenance candidate: `v1.0.4-rc1`
 - Candidate prepared: 2026-07-27
 - Independent audit reconciliation prepared: 2026-08-05
+- Paired-inference correction prepared: 2026-08-10
 - v1.0.4 DOI and release date: not yet assigned
