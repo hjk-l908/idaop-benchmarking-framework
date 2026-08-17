@@ -29,9 +29,12 @@ This checklist records the public GitHub release, licensing, Zenodo archival, an
 ## Pending v1.0.4 release actions
 
 - [ ] Review and approve the `v1.0.4-rc1` maintenance candidate.
-- [ ] Commit and push the candidate repository state.
-- [ ] Before tagging, set `CITATION.cff` `version` to `1.0.4`, replace the candidate `message`, and add `date-released: YYYY-MM-DD`.
-- [ ] Create GitHub release `v1.0.4`.
+- [ ] Apply the final pre-release metadata conversion on `maintenance-v1.0.4-rc1`, including `CITATION.cff` version/message/date-released and any confirmed stale current-facing release wording; do not guess the v1.0.4 DOI.
+- [ ] Regenerate `metadata/package_file_manifest.csv` and `metadata/SHA256SUMS.txt` after the final pre-release metadata edits.
+- [ ] Commit and push the final pre-release repository state and confirm repository validation, checksum verification, and `git diff --check` all pass.
+- [ ] Mark the pull request ready for review only after the final pre-release checks pass, then merge `maintenance-v1.0.4-rc1` into `main`.
+- [ ] Confirm the merged `main` commit and its validation checks before creating the release.
+- [ ] Create GitHub release/tag `v1.0.4` from the validated merged `main` commit.
 - [ ] Archive GitHub release `v1.0.4` through Zenodo.
 - [ ] After Zenodo assigns it, add the actual final v1.0.4 DOI and release date to current-facing metadata; do not guess the DOI.
 - [ ] Regenerate `metadata/package_file_manifest.csv` and `metadata/SHA256SUMS.txt` after every final metadata edit.
