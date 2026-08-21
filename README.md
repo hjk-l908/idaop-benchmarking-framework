@@ -1,6 +1,6 @@
 # iDAOP: Antioxidant Peptide Benchmarking Framework
 
-This repository provides the manuscript-facing release candidate for:
+This repository provides the manuscript-facing release package for:
 
 **Antioxidant Peptide Benchmark Dataset and Formal Transparent Baseline Evaluation with a Controlled Frozen ESM-2 Stress Comparison**
 
@@ -10,11 +10,11 @@ It does not claim stable frozen ESM-2 superiority over transparent AAC baselines
 
 ## Current release status
 
-**Status:** Maintenance release candidate `v1.0.4-rc1`, prepared from the archived `v1.0.3` snapshot to correct archive-byte checksum consistency, stale release metadata, and the random-CV paired-inference unit. The v1.0.4 candidate uses 10 replicate-level pairs for paired random-CV inference; the archived v1.0.3 file remains historical fold-level provenance.
+**Status:** Maintenance release `v1.0.4`, dated 2026-08-21, prepared from the archived `v1.0.3` snapshot to correct archive-byte checksum consistency, stale release metadata, and the random-CV paired-inference unit. The v1.0.4 release uses 10 replicate-level pairs for paired random-CV inference; the archived v1.0.3 file remains historical fold-level provenance.
 
-The currently archived public release remains GitHub release `v1.0.3` with Zenodo DOI https://doi.org/10.5281/zenodo.21270655. This candidate has not yet been published or assigned a v1.0.4 DOI.
+The previous archived public release is GitHub release `v1.0.3` with Zenodo DOI https://doi.org/10.5281/zenodo.21270655. The version-specific v1.0.4 Zenodo DOI will be added to current-facing metadata only after Zenodo assigns it.
 
-This package contains source tables, split manifests, QC logs, environment versions, scripts, retained-assignment R02A documentation, diagnostic traceability files, standalone Figure 1 assets, and a candidate-byte checksum inventory covering every repository file except the inventory file itself.
+This package contains source tables, split manifests, QC logs, environment versions, scripts, retained-assignment R02A documentation, diagnostic traceability files, standalone Figure 1 assets, and a release-byte checksum inventory covering every repository file except the inventory file itself.
 
 ## License and reuse status
 
@@ -58,7 +58,7 @@ The original cluster-generation command/script was not recovered. Therefore, R02
 - `scripts/` -- analysis and QC scripts used to trace PLM outputs and validate this repository snapshot.
 - `supplementary/` -- supplementary material map and R02A retained-assignment documentation.
 - `docs/` -- GitHub Pages draft landing page.
-- `metadata/` -- candidate-byte manifest, SHA-256 inventory, validation summaries, and maintenance change manifest.
+- `metadata/` -- release-byte manifest, SHA-256 inventory, validation summaries, and maintenance change manifest.
 
 ## Diagnostic traceability files
 
@@ -78,23 +78,23 @@ VALIDATION_STATUS: PASS
 CHECKSUM_STATUS: PASS
 ```
 
-## Final archival tasks for v1.0.4
+## Final archival workflow for v1.0.4
 
-- Review this maintenance candidate and confirm that no additional repository changes are required.
-- Commit the candidate with LF line endings preserved by `.gitattributes`.
-- Create GitHub release `v1.0.4`.
-- Archive the release through Zenodo and obtain the version-specific v1.0.4 DOI.
-- Before tagging, convert `CITATION.cff` from `1.0.4-rc1` to final `1.0.4` metadata and add the release date; add the actual DOI to current-facing metadata only after Zenodo assigns it.
+- Confirm the final v1.0.4 metadata and repository validation before tagging.
+- Preserve LF line endings according to `.gitattributes` throughout the final release workflow.
+- Create GitHub release `v1.0.4` from the validated merged `main` branch.
+- Archive the GitHub release through Zenodo and obtain the version-specific v1.0.4 DOI.
+- Keep `CITATION.cff` at version `1.0.4` with release date `2026-08-21`; add the actual version-specific DOI to current-facing metadata only after Zenodo assigns it.
 - Regenerate the manifest/checksum inventory after any final metadata edit, then extract each downloaded release archive and run `python scripts/verify_package_checksums.py` inside the extracted tree.
 
 ## Release and citation metadata
 
 - GitHub repository: https://github.com/hjk-l908/idaop-benchmarking-framework
-- Current archived GitHub release: `v1.0.3` (https://github.com/hjk-l908/idaop-benchmarking-framework/releases/tag/v1.0.3)
-- Current archived Zenodo DOI: https://doi.org/10.5281/zenodo.21270655
-- Maintenance candidate: `v1.0.4-rc1`
-- Candidate prepared: 2026-07-27
-- v1.0.4 DOI and release date: not yet assigned
+- Previous archived GitHub release: `v1.0.3` (https://github.com/hjk-l908/idaop-benchmarking-framework/releases/tag/v1.0.3)
+- Previous archived Zenodo DOI: https://doi.org/10.5281/zenodo.21270655
+- Release version: `v1.0.4`
+- Release date: 2026-08-21
+- v1.0.4 version-specific Zenodo DOI: pending archival assignment; do not guess.
 - Code license: MIT License
 - Public-safe benchmark materials and documentation: CC BY 4.0, as described in `DATA_LICENSE.md`
 - ORCID identifiers are not listed in this repository snapshot per current author-side decision.

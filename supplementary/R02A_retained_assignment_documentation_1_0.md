@@ -120,7 +120,7 @@ We agree that R02A should not be overinterpreted as a fully regenerable clusteri
 
 ## 8. Public-release status note
 
-The R02A retained-assignment documentation has been reconciled for the v2.1.1 public-facing release candidate. The retained source filenames are current, SHA-256 records are provided in `metadata/SHA256SUMS.txt`, R02A is described as descriptive-only in manuscript-facing wording, no external clustering-tool claim is made without recovered evidence, challenge-only sequences remain absent from R02A train/test manifests, and sensitivity-negative rows remain separate from core-only rows.
+The R02A retained-assignment documentation has been reconciled for the v1.0.4 public release dated 2026-08-21. The retained source filenames are current, SHA-256 records are provided in `metadata/SHA256SUMS.txt`, R02A is described as descriptive-only in manuscript-facing wording, no external clustering-tool claim is made without recovered evidence, challenge-only sequences remain absent from R02A train/test manifests, and sensitivity-negative rows remain separate from core-only rows.
 
 A final public-safety scan should still be repeated after any future author-side release changes, DOI updates, licensing changes, or repository restructuring.
 

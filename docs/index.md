@@ -2,7 +2,7 @@
 
 This project page accompanies a manuscript-facing benchmark and evaluation framework for antioxidant peptide prediction studies.
 
-> Release status: maintenance release candidate `v1.0.4-rc1`, prepared from archived release `v1.0.3` to correct archive-byte checksum consistency, stale current-status metadata, and the random-CV paired-inference unit. The candidate `results/paired_stats.csv` uses 10 replicate-level pairs for random-CV inference; the current public archive remains v1.0.3 at https://doi.org/10.5281/zenodo.21270655.
+> Release status: maintenance release `v1.0.4`, dated 2026-08-21, prepared from archived release `v1.0.3` to correct archive-byte checksum consistency, stale current-status metadata, and the random-CV paired-inference unit. The release `results/paired_stats.csv` uses 10 replicate-level pairs for random-CV inference. The previous archived Zenodo release is v1.0.3 at https://doi.org/10.5281/zenodo.21270655; the version-specific v1.0.4 Zenodo DOI will be added only after Zenodo assigns it.
 
 **iDAOP is not a new standalone predictor or web server.** It supports branch-aware dataset governance, transparent AAC baseline evaluation, retained-assignment R02A descriptive stress testing, and a controlled frozen ESM-2 comparison.
 
@@ -15,7 +15,7 @@ This project page accompanies a manuscript-facing benchmark and evaluation frame
 - QC manifests for embedding, split matching, classifier execution, and R02A core-only addendum
 - Environment and script inventory
 - Public-safe diagnostic traceability files for R01/R03/R04/R05/R06/R07 in `results/diagnostic/`
-- Candidate-byte package manifest and SHA-256 inventory
+- Release-byte package manifest and SHA-256 inventory
 
 ## Main result boundary
 
@@ -36,7 +36,7 @@ Start with:
 
 ## Citation
 
-Until v1.0.4 is released and archived, cite the current archived v1.0.3 release using https://doi.org/10.5281/zenodo.21270655. The candidate `CITATION.cff` identifies itself as `1.0.4-rc1` and intentionally does not claim a final v1.0.4 release date or DOI.
+Release metadata identify this version as v1.0.4, dated 2026-08-21. The previous archived v1.0.3 Zenodo release remains available at https://doi.org/10.5281/zenodo.21270655. `CITATION.cff` identifies version `1.0.4` with release date `2026-08-21`; the version-specific v1.0.4 Zenodo DOI will be added only after Zenodo assigns it and must not be guessed.
 
 ## License
 
