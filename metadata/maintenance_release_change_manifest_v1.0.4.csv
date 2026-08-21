@@ -1,0 +1,20 @@
+path,change_type,scope
+.gitattributes,added,maintenance metadata / archive consistency
+.github/workflows/validate_repository.yml,content updated,maintenance metadata / archive consistency
+CITATION.cff,content updated,maintenance metadata / archive consistency
+DATA_LICENSE.md,content updated,maintenance metadata / release-status consistency
+MAINTENANCE_RELEASE_NOTES_v1.0.4.md,added,maintenance metadata plus replicate-level paired-inference correction documentation
+PUBLIC_RELEASE_CHECKLIST.md,content updated,maintenance metadata plus replicate-level paired-inference correction documentation
+README.md,content updated,maintenance metadata plus replicate-level paired-inference correction documentation
+docs/index.md,content updated,maintenance metadata plus replicate-level paired-inference correction documentation
+metadata/SHA256SUMS.txt,content updated,maintenance metadata / archive consistency
+metadata/maintenance_release_change_manifest_v1.0.4.csv,added,maintenance metadata / archive consistency
+metadata/package_file_manifest.csv,content updated,maintenance metadata / archive consistency
+metadata/repository_validation_report.txt,content updated,maintenance metadata plus replicate-level paired-inference correction documentation
+results/README.md,content updated,result-source documentation updated for replicate-level paired inference
+results/paired_stats.csv,content updated,statistical-reporting correction / replicate-level random-CV inference; no model rerun or point-estimate change
+reviewer_quick_start.md,content updated,reviewer guidance updated for replicate-level paired inference
+scripts/validate_repository.py,content updated,repository validation hardened to enforce replicate-level paired-inference correction
+scripts/verify_package_checksums.py,added,maintenance metadata / archive consistency
+supplementary/R02A_retained_assignment_documentation_1_0.md,content updated,maintenance metadata / release-status consistency
+supplementary/reproducibility_and_supplementary_materials_map_original_1_0.csv,content updated,maintenance metadata plus replicate-level paired-inference correction documentation

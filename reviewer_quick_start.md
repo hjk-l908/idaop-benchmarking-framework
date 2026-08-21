@@ -27,7 +27,7 @@ This file contains the final matched PLM-vs-AAC comparison table, including comp
 
 Open `results/paired_stats.csv`.
 
-These rows support the statement that PLM gains are setting-dependent: LR_L2 core_only random-CV MCC improves modestly, while LinearSVM primarily shifts toward sensitivity/F1 with lower specificity.
+For the v1.0.4 candidate, random-CV paired inference uses the 10 sampling replicates as the inferential unit after averaging the four folds within each replicate. The archived v1.0.3 `paired_stats.csv` is retained only in that historical release as fold-level provenance. The corrected LR_L2 core-only MCC delta is +0.059 with two-sided Wilcoxon p = 0.064 and bootstrap 95% CI +0.006 to +0.109; the sensitivity-augmented LR_L2 MCC delta is +0.040 with p = 0.232 and CI -0.020 to +0.100. These rows support a setting-dependent, non-stable PLM effect rather than a stable-superiority claim.
 
 ## 4. R02A retained-assignment status
 

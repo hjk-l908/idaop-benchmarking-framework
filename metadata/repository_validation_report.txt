@@ -1,7 +1,11 @@
 VALIDATION_STATUS: PASS
 
-Repository QA summary after public-release license patch v1
+Repository QA summary for maintenance release v1.0.4
 - Core repository validation script: PASS.
+- Release scientific content boundary: no model rerun, sequence relabeling, branch reassignment, split regeneration, Table 6 point-estimate change, or manuscript-claim expansion. Random-CV paired inferential statistics were corrected from 40 nested fold-level pairs to 10 replicate-level pairs after within-replicate fold averaging.
+- Branch counts retained: positive_core 899; core_negative 29; negative_sensitivity 3; challenge_only 28.
+- Paired-inference correction: `results/paired_stats.csv` uses n_pairs = 10 and `paired_wilcoxon_replicate_level_two_sided` for all random-CV inferential rows; R02A remains `descriptive_only_n_lt_10` with n_pairs = 4.
+- Manuscript-facing LR_L2 MCC checks: core_only delta +0.058681, p = 0.064453, bootstrap 95% CI +0.005939 to +0.108825; sensplus delta +0.040214, p = 0.232422, CI -0.020188 to +0.099814.
 - Diagnostic CSV files in results/diagnostic/: 19.
 - Diagnostic README present: yes.
 - R08 files in results/diagnostic/: 0.
@@ -11,8 +15,11 @@ Repository QA summary after public-release license patch v1
 - Standalone Figure 1 assets remain available in `figures/` with no predictor-superiority claim.
 - Author metadata: CITATION.cff lists Hui-Ju Kao, Yu-Jie Weng, Chia-Hung Chen, Chen-Lin Yu, Kai-Yao Huang, and Shun-Long Weng; ORCID identifiers are not listed.
 - License metadata: code/scripts use MIT License; public-safe author-prepared benchmark materials and documentation use CC BY 4.0 as described in DATA_LICENSE.md.
-- Manifest/checksum status: metadata/package_file_manifest.csv and metadata/SHA256SUMS.txt regenerated after the public-release license patch.
+- Archive-byte policy: recognized repository text files use LF line endings; `.gitattributes` records the policy.
+- Manifest/checksum status: metadata/package_file_manifest.csv and metadata/SHA256SUMS.txt regenerated from release bytes; checksum verification checks listed-file integrity and reverse inventory coverage, with SHA256SUMS.txt intentionally excluded from self-hashing.
 - Public-safety status: no intentionally distributed source PDFs, validation PDFs, restricted source archives, FASTA/FA raw source files, CIF files, credentials, API tokens, or concrete private execution paths were identified in the current public-facing file tree.
 
-Remaining archival note
-- Zenodo DOI, final release date, and release tag should be added after the GitHub release is created and archived.
+Release status
+- Previous archived public release: v1.0.3 at https://doi.org/10.5281/zenodo.21270655.
+- Current release package: v1.0.4, dated 2026-08-21; initial maintenance candidate prepared 2026-07-27; independent audit reconciliation prepared 2026-08-05; paired-inference correction prepared 2026-08-10.
+- v1.0.4 release date: 2026-08-21; version-specific Zenodo DOI: pending archival assignment; do not guess.
