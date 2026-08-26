@@ -1,6 +1,6 @@
 # Public release checklist
 
-This checklist records the public GitHub release, licensing, Zenodo archival, and v1.0.4 maintenance-release workflow for the iDAOP repository.
+This checklist records the public GitHub release, licensing, Zenodo archival, the v1.0.4 maintenance-release workflow, and the post-v1.0.4 v1.0.5 archival-repair workflow for the iDAOP repository.
 
 ## Completed before public release
 
@@ -24,32 +24,53 @@ This checklist records the public GitHub release, licensing, Zenodo archival, an
 - [x] Remove stale current-status statements that incorrectly described the v1.0.3 DOI as pending.
 - [x] Correct random-CV paired inference in `results/paired_stats.csv` to use 10 replicate-level pairs after within-replicate fold averaging; preserve R02A as descriptive-only.
 - [x] Confirm that the paired-inference correction changes p values/confidence intervals only and does not rerun models or change Table 6 point estimates.
-- [x] Large binary embedding files will remain in GitHub and will also be included in the v1.0.4 Zenodo archival (both).
+- [x] Large binary embedding files remain in GitHub; inclusion in the planned v1.0.4 Zenodo archive was not completed because Zenodo archival failed.
 
-## Pending v1.0.4 release actions
+## v1.0.4 release outcome
 
 - [x] Review and approve the `v1.0.4-rc1` maintenance candidate.
-- [x] Apply the final pre-release metadata conversion on `maintenance-v1.0.4-rc1`, including `CITATION.cff` version/message/date-released and any confirmed stale current-facing release wording; do not guess the v1.0.4 DOI.
-- [x] Regenerate `metadata/package_file_manifest.csv` and `metadata/SHA256SUMS.txt` after the final pre-release metadata edits.
-- [ ] Commit and push the final pre-release repository state and confirm repository validation, checksum verification, and `git diff --check` all pass.
-- [ ] Mark the pull request ready for review only after the final pre-release checks pass, then merge `maintenance-v1.0.4-rc1` into `main`.
-- [ ] Confirm the merged `main` commit and its validation checks before creating the release.
-- [ ] Create GitHub release/tag `v1.0.4` from the validated merged `main` commit.
-- [ ] Archive GitHub release `v1.0.4` through Zenodo.
-- [ ] After Zenodo assigns it, add the actual final v1.0.4 DOI and release date to current-facing metadata; do not guess the DOI.
-- [ ] Regenerate `metadata/package_file_manifest.csv` and `metadata/SHA256SUMS.txt` after every final metadata edit.
-- [ ] Record the SHA-256 of `metadata/SHA256SUMS.txt` in the GitHub Release body or another external release audit record.
-- [ ] Extract the downloaded GitHub and Zenodo release archives and run `python scripts/verify_package_checksums.py` inside each extracted tree; do not treat a GitHub-generated archive-file hash as a stable identifier.
-- [ ] Regenerate the reviewer-facing Supplementary File S4 source inventory after the final v1.0.4 repository hashes are locked, so its `results/paired_stats.csv` hash matches the released file.
-- [ ] Update manuscript Data availability and Additional file 7 only after final archive verification.
+- [x] Apply the final pre-release metadata conversion on `maintenance-v1.0.4-rc1`, including `CITATION.cff` version/message/date-released and confirmed stale current-facing release wording.
+- [x] Regenerate `metadata/package_file_manifest.csv` and `metadata/SHA256SUMS.txt` after the final v1.0.4 pre-release metadata edits.
+- [x] Commit and push the final pre-release repository state and confirm repository validation, checksum verification, and `git diff --check` pass.
+- [x] Mark the pull request ready for review and merge `maintenance-v1.0.4-rc1` into `main`.
+- [x] Confirm the merged `main` commit and validation checks before release.
+- [x] Create GitHub release/tag `v1.0.4` from validated merged `main` commit `35d64da`.
+- [x] Trigger Zenodo archival for GitHub release `v1.0.4`; Zenodo received the release, but archival failed during `CITATION.cff` metadata parsing.
+- [x] Confirm that no version-specific v1.0.4 Zenodo DOI was assigned; do not guess or fabricate one.
+- [x] Record the validated v1.0.4 GitHub release state: `VALIDATION_STATUS: PASS`, `CHECKSUM_STATUS: PASS`, `TOTAL_ENTRIES: 131`, `CHECKED_FILES: 131`.
+- [x] Record the v1.0.4 GitHub Release SHA-256 of `metadata/SHA256SUMS.txt`: `e69c4b2384d5af255a032da027f938b1d311ccdd4c63cc461539b453390134b30`.
+- [x] Record that cross-archive GitHub/Zenodo verification for v1.0.4 could not be completed because no Zenodo archive was created.
+- [ ] Reviewer-facing Supplementary File S4 refresh remains deferred until the successful archival repair release hashes are locked.
+- [ ] Update manuscript Data availability and Additional file 7 only after successful archival verification of the repair release.
 
-## Release citation
+## v1.0.4 release citation
 
-- Previous archived GitHub release: `v1.0.3` (https://github.com/hjk-l908/idaop-benchmarking-framework/releases/tag/v1.0.3)
+- Previous Zenodo-archived GitHub release: `v1.0.3` (https://github.com/hjk-l908/idaop-benchmarking-framework/releases/tag/v1.0.3)
 - Previous archived Zenodo DOI: https://doi.org/10.5281/zenodo.21270655
-- Release version: `v1.0.4`
-- Initial maintenance candidate prepared: 2026-07-27
-- Independent audit reconciliation prepared: 2026-08-05
-- Paired-inference correction prepared: 2026-08-10
-- Release date: 2026-08-21
-- v1.0.4 version-specific Zenodo DOI: pending archival assignment; do not guess.
+- GitHub maintenance release: `v1.0.4`
+- GitHub release date: 2026-08-21
+- v1.0.4 version-specific Zenodo DOI: not assigned; Zenodo archival failed during `CITATION.cff` metadata parsing; do not guess.
+
+## Post-v1.0.4 Zenodo archival repair / v1.0.5
+
+- [x] Diagnose the v1.0.4 Zenodo failure as an unterminated double-quoted `message` scalar in `CITATION.cff`.
+- [x] Apply and independently validate the minimal closing-quote repair before release-version conversion.
+- [x] Prepare `CITATION.cff` for v1.0.5 with version `1.0.5` and release date `2026-08-26`.
+- [x] Update `DATA_LICENSE.md` current-release wording to v1.0.5 / 2026-08-26.
+- [x] Update `README.md` current-facing release status and archival workflow while preserving v1.0.4 historical provenance.
+- [x] Update `docs/index.md` current-facing release metadata while preserving the v1.0.4 maintenance-release notes reference.
+- [x] Record the v1.0.4 archival failure outcome and v1.0.5 repair workflow in this checklist.
+- [ ] Regenerate `metadata/package_file_manifest.csv` and `metadata/SHA256SUMS.txt` after all final v1.0.5 metadata edits.
+- [ ] Run repository validation, checksum verification, `git diff --check`, and final CFF/YAML validation on the v1.0.5 candidate.
+- [ ] Commit and push the repair branch, open/review the pull request, and merge only after validation passes.
+- [ ] Create GitHub release/tag `v1.0.5` from the validated merged `main` commit.
+- [ ] Archive GitHub release `v1.0.5` through Zenodo and obtain the version-specific DOI.
+- [ ] After Zenodo assigns it, add the actual v1.0.5 DOI to current-facing metadata; do not guess.
+- [ ] Verify downloaded GitHub and Zenodo v1.0.5 archives against the final inventory and checksums.
+- [ ] Update reviewer-facing Supplementary File S4 and manuscript data-availability materials only after successful final archive verification.
+
+## v1.0.5 release citation
+
+- Release version: `v1.0.5`
+- Release date: 2026-08-26
+- v1.0.5 version-specific Zenodo DOI: pending archival assignment; do not guess.

@@ -2,7 +2,7 @@
 
 This project page accompanies a manuscript-facing benchmark and evaluation framework for antioxidant peptide prediction studies.
 
-> Release status: maintenance release `v1.0.4`, dated 2026-08-21, prepared from archived release `v1.0.3` to correct archive-byte checksum consistency, stale current-status metadata, and the random-CV paired-inference unit. The release `results/paired_stats.csv` uses 10 replicate-level pairs for random-CV inference. The previous archived Zenodo release is v1.0.3 at https://doi.org/10.5281/zenodo.21270655; the version-specific v1.0.4 Zenodo DOI will be added only after Zenodo assigns it.
+> Release status: metadata-repair maintenance release `v1.0.5`, dated 2026-08-26, prepared from GitHub release `v1.0.4` to repair `CITATION.cff` YAML validity and current-facing archival metadata. The scientific datasets, branch assignments, split manifests, model predictions, Table 6 point estimates, and paired-inference results are unchanged from v1.0.4. The previous archived Zenodo release remains v1.0.3 at https://doi.org/10.5281/zenodo.21270655; GitHub release v1.0.4 was published, but its Zenodo archival failed during `CITATION.cff` metadata parsing, so no version-specific v1.0.4 Zenodo DOI was assigned.
 
 **iDAOP is not a new standalone predictor or web server.** It supports branch-aware dataset governance, transparent AAC baseline evaluation, retained-assignment R02A descriptive stress testing, and a controlled frozen ESM-2 comparison.
 
@@ -36,7 +36,7 @@ Start with:
 
 ## Citation
 
-Release metadata identify this version as v1.0.4, dated 2026-08-21. The previous archived v1.0.3 Zenodo release remains available at https://doi.org/10.5281/zenodo.21270655. `CITATION.cff` identifies version `1.0.4` with release date `2026-08-21`; the version-specific v1.0.4 Zenodo DOI will be added only after Zenodo assigns it and must not be guessed.
+Release metadata identify this version as v1.0.5, dated 2026-08-26. The previous archived v1.0.3 Zenodo release remains available at https://doi.org/10.5281/zenodo.21270655; GitHub release v1.0.4 was published, but its Zenodo archival failed during `CITATION.cff` metadata parsing and no version-specific v1.0.4 Zenodo DOI was assigned. `CITATION.cff` identifies version `1.0.5` with release date `2026-08-26`; the version-specific v1.0.5 Zenodo DOI will be added only after Zenodo assigns it and must not be guessed.
 
 ## License
 

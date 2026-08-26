@@ -1,6 +1,6 @@
 # Data and documentation reuse license
 
-This repository contains the v1.0.4 public release, dated 2026-08-21, for the iDAOP antioxidant peptide benchmarking framework.
+This repository contains the v1.0.5 public release, dated 2026-08-26, for the iDAOP antioxidant peptide benchmarking framework.
 
 ## Code license
 
