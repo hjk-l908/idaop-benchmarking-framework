@@ -94,7 +94,7 @@ CHECKSUM_STATUS: PASS
 - Previous archived Zenodo DOI: https://doi.org/10.5281/zenodo.21270655
 - Release version: `v1.0.5`
 - Release date: 2026-08-26
-- v1.0.5 version-specific Zenodo DOI: pending archival assignment; do not guess.
+- v1.0.5 version-specific Zenodo DOI: https://doi.org/10.5281/zenodo.22107311
 - Code license: MIT License
 - Public-safe benchmark materials and documentation: CC BY 4.0, as described in `DATA_LICENSE.md`
 - ORCID identifiers are not listed in this repository snapshot per current author-side decision.

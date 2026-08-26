@@ -36,7 +36,7 @@ Start with:
 
 ## Citation
 
-Release metadata identify this version as v1.0.5, dated 2026-08-26. The previous archived v1.0.3 Zenodo release remains available at https://doi.org/10.5281/zenodo.21270655; GitHub release v1.0.4 was published, but its Zenodo archival failed during `CITATION.cff` metadata parsing and no version-specific v1.0.4 Zenodo DOI was assigned. `CITATION.cff` identifies version `1.0.5` with release date `2026-08-26`; the version-specific v1.0.5 Zenodo DOI will be added only after Zenodo assigns it and must not be guessed.
+Release metadata identify this version as v1.0.5, dated 2026-08-26. The previous archived v1.0.3 Zenodo release remains available at https://doi.org/10.5281/zenodo.21270655; GitHub release v1.0.4 was published, but its Zenodo archival failed during `CITATION.cff` metadata parsing and no version-specific v1.0.4 Zenodo DOI was assigned. `CITATION.cff` identifies version `1.0.5` with release date `2026-08-26`; the version-specific v1.0.5 Zenodo DOI is https://doi.org/10.5281/zenodo.22107311.
 
 ## License
 

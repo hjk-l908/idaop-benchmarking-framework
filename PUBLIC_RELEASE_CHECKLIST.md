@@ -63,15 +63,15 @@ This checklist records the public GitHub release, licensing, Zenodo archival, th
 - [x] Record the v1.0.5 pre-merge validation baseline at commit `c9eaee563afe2141d1e4d65405d9cc6845d760f4`: GitHub Actions workflow #30 passed `VALIDATION_STATUS: PASS` and `CHECKSUM_STATUS: PASS` (`TOTAL_ENTRIES: 131`; `CHECKED_FILES: 131`).
 - Inventory freeze rule: after this checklist text is finalized, regenerate `metadata/package_file_manifest.csv` and `metadata/SHA256SUMS.txt` exactly once more; no tracked metadata edits are permitted afterward unless the inventories are regenerated again.
 - Final validation gate: the frozen closure commit must pass repository validation, checksum verification, `git diff --check`, and final CFF/YAML validation; completion is evidenced by the closure commit and GitHub Actions/PR records rather than by a post-validation edit to this checklist.
-- [ ] Commit and push the repair branch, open/review the pull request, and merge only after validation passes.
-- [ ] Create GitHub release/tag `v1.0.5` from the validated merged `main` commit.
-- [ ] Archive GitHub release `v1.0.5` through Zenodo and obtain the version-specific DOI.
-- [ ] After Zenodo assigns it, add the actual v1.0.5 DOI to current-facing metadata; do not guess.
-- [ ] Verify downloaded GitHub and Zenodo v1.0.5 archives against the final inventory and checksums.
+- [x] Commit and push the repair branch, open/review the pull request, and merge only after validation passes.
+- [x] Create GitHub release/tag `v1.0.5` from the validated merged `main` commit.
+- [x] Archive GitHub release `v1.0.5` through Zenodo and obtain the version-specific DOI.
+- [x] After Zenodo assigns it, add the actual v1.0.5 DOI to current-facing metadata; do not guess.
+- [x] Verify downloaded GitHub and Zenodo v1.0.5 archives against the final inventory and checksums.
 - [ ] Update reviewer-facing Supplementary File S4 and manuscript data-availability materials only after successful final archive verification.
 
 ## v1.0.5 release citation
 
 - Release version: `v1.0.5`
 - Release date: 2026-08-26
-- v1.0.5 version-specific Zenodo DOI: pending archival assignment; do not guess.
+- v1.0.5 version-specific Zenodo DOI: https://doi.org/10.5281/zenodo.22107311
