@@ -60,8 +60,9 @@ This checklist records the public GitHub release, licensing, Zenodo archival, th
 - [x] Update `README.md` current-facing release status and archival workflow while preserving v1.0.4 historical provenance.
 - [x] Update `docs/index.md` current-facing release metadata while preserving the v1.0.4 maintenance-release notes reference.
 - [x] Record the v1.0.4 archival failure outcome and v1.0.5 repair workflow in this checklist.
-- [ ] Regenerate `metadata/package_file_manifest.csv` and `metadata/SHA256SUMS.txt` after all final v1.0.5 metadata edits.
-- [ ] Run repository validation, checksum verification, `git diff --check`, and final CFF/YAML validation on the v1.0.5 candidate.
+- [x] Record the v1.0.5 pre-merge validation baseline at commit `c9eaee563afe2141d1e4d65405d9cc6845d760f4`: GitHub Actions workflow #30 passed `VALIDATION_STATUS: PASS` and `CHECKSUM_STATUS: PASS` (`TOTAL_ENTRIES: 131`; `CHECKED_FILES: 131`).
+- Inventory freeze rule: after this checklist text is finalized, regenerate `metadata/package_file_manifest.csv` and `metadata/SHA256SUMS.txt` exactly once more; no tracked metadata edits are permitted afterward unless the inventories are regenerated again.
+- Final validation gate: the frozen closure commit must pass repository validation, checksum verification, `git diff --check`, and final CFF/YAML validation; completion is evidenced by the closure commit and GitHub Actions/PR records rather than by a post-validation edit to this checklist.
 - [ ] Commit and push the repair branch, open/review the pull request, and merge only after validation passes.
 - [ ] Create GitHub release/tag `v1.0.5` from the validated merged `main` commit.
 - [ ] Archive GitHub release `v1.0.5` through Zenodo and obtain the version-specific DOI.

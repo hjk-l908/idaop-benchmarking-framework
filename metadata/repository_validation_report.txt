@@ -1,6 +1,6 @@
 VALIDATION_STATUS: PASS
 
-Repository QA summary for maintenance release v1.0.4
+Repository QA summary for metadata-repair release candidate v1.0.5
 - Core repository validation script: PASS.
 - Release scientific content boundary: no model rerun, sequence relabeling, branch reassignment, split regeneration, Table 6 point-estimate change, or manuscript-claim expansion. Random-CV paired inferential statistics were corrected from 40 nested fold-level pairs to 10 replicate-level pairs after within-replicate fold averaging.
 - Branch counts retained: positive_core 899; core_negative 29; negative_sensitivity 3; challenge_only 28.
@@ -21,5 +21,5 @@ Repository QA summary for maintenance release v1.0.4
 
 Release status
 - Previous archived public release: v1.0.3 at https://doi.org/10.5281/zenodo.21270655.
-- Current release package: v1.0.4, dated 2026-08-21; initial maintenance candidate prepared 2026-07-27; independent audit reconciliation prepared 2026-08-05; paired-inference correction prepared 2026-08-10.
-- v1.0.4 release date: 2026-08-21; version-specific Zenodo DOI: pending archival assignment; do not guess.
+- Current release candidate: v1.0.5, dated 2026-08-26; remote pre-merge validation at commit c9eaee563afe2141d1e4d65405d9cc6845d760f4 passed GitHub Actions workflow #30 with VALIDATION_STATUS: PASS and CHECKSUM_STATUS: PASS (TOTAL_ENTRIES: 131; CHECKED_FILES: 131).
+- Planned v1.0.5 release date: 2026-08-26; version-specific Zenodo DOI: pending archival assignment; do not guess. GitHub release v1.0.4 was published on 2026-08-21, but its Zenodo archival failed during CITATION.cff metadata parsing and no version-specific v1.0.4 Zenodo DOI was assigned.
