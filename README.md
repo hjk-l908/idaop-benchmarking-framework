@@ -10,9 +10,9 @@ It does not claim stable frozen ESM-2 superiority over transparent AAC baselines
 
 ## Current release status
 
-**Status:** Maintenance release `v1.0.4`, dated 2026-08-21, prepared from the archived `v1.0.3` snapshot to correct archive-byte checksum consistency, stale release metadata, and the random-CV paired-inference unit. The v1.0.4 release uses 10 replicate-level pairs for paired random-CV inference; the archived v1.0.3 file remains historical fold-level provenance.
+**Status:** Metadata-repair maintenance release `v1.0.5`, dated 2026-08-26, prepared from GitHub release `v1.0.4` to repair `CITATION.cff` YAML validity and current-facing archival metadata. The scientific datasets, branch assignments, split manifests, model predictions, Table 6 point estimates, and paired-inference results are unchanged from v1.0.4.
 
-The previous archived public release is GitHub release `v1.0.3` with Zenodo DOI https://doi.org/10.5281/zenodo.21270655. The version-specific v1.0.4 Zenodo DOI will be added to current-facing metadata only after Zenodo assigns it.
+The previous archived public release remains GitHub release `v1.0.3` with Zenodo DOI https://doi.org/10.5281/zenodo.21270655. GitHub release `v1.0.4` was published, but its Zenodo archival failed during `CITATION.cff` metadata parsing; no version-specific v1.0.4 Zenodo DOI was assigned. The `v1.0.5` maintenance patch repairs that archival metadata path without changing the scientific release content.
 
 This package contains source tables, split manifests, QC logs, environment versions, scripts, retained-assignment R02A documentation, diagnostic traceability files, standalone Figure 1 assets, and a release-byte checksum inventory covering every repository file except the inventory file itself.
 
@@ -78,13 +78,13 @@ VALIDATION_STATUS: PASS
 CHECKSUM_STATUS: PASS
 ```
 
-## Final archival workflow for v1.0.4
+## Final archival workflow for v1.0.5
 
-- Confirm the final v1.0.4 metadata and repository validation before tagging.
+- Confirm the final v1.0.5 metadata and repository validation before tagging.
 - Preserve LF line endings according to `.gitattributes` throughout the final release workflow.
-- Create GitHub release `v1.0.4` from the validated merged `main` branch.
-- Archive the GitHub release through Zenodo and obtain the version-specific v1.0.4 DOI.
-- Keep `CITATION.cff` at version `1.0.4` with release date `2026-08-21`; add the actual version-specific DOI to current-facing metadata only after Zenodo assigns it.
+- Create GitHub release `v1.0.5` from the validated merged `main` branch.
+- Archive the GitHub release through Zenodo and obtain the version-specific v1.0.5 DOI.
+- Keep `CITATION.cff` at version `1.0.5` with release date `2026-08-26`; add the actual version-specific DOI to current-facing metadata only after Zenodo assigns it.
 - Regenerate the manifest/checksum inventory after any final metadata edit, then extract each downloaded release archive and run `python scripts/verify_package_checksums.py` inside the extracted tree.
 
 ## Release and citation metadata
@@ -92,9 +92,9 @@ CHECKSUM_STATUS: PASS
 - GitHub repository: https://github.com/hjk-l908/idaop-benchmarking-framework
 - Previous archived GitHub release: `v1.0.3` (https://github.com/hjk-l908/idaop-benchmarking-framework/releases/tag/v1.0.3)
 - Previous archived Zenodo DOI: https://doi.org/10.5281/zenodo.21270655
-- Release version: `v1.0.4`
-- Release date: 2026-08-21
-- v1.0.4 version-specific Zenodo DOI: pending archival assignment; do not guess.
+- Release version: `v1.0.5`
+- Release date: 2026-08-26
+- v1.0.5 version-specific Zenodo DOI: pending archival assignment; do not guess.
 - Code license: MIT License
 - Public-safe benchmark materials and documentation: CC BY 4.0, as described in `DATA_LICENSE.md`
 - ORCID identifiers are not listed in this repository snapshot per current author-side decision.
